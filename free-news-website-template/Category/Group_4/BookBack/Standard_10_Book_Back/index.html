@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+  	<title>Thinkswise - Standard 6</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    
+    
+    <style>
+      .question-text {
+          margin-bottom: 10px; /* This adds space below the question text */
+      }
+  
+      .question label {
+      color: black; /* Sets the text color to black */
+      }
+  
+      .question {
+          display: block;
+          padding-left: 30px; /* This keeps the options aligned with the question text */
+          margin-top: 10px; /* This adds space above the options */
+      }
+  
+      .horizontal-options label {
+      margin-right: 15px; /* Space between options */
+      /* No 'display: block;' needed since it's horizontal by default */
+      }
+  
+  
+      .vertical-options label {
+      display: block; /* This will stack the labels vertically */
+      margin-right: 0; /* Reset any horizontal margin if necessary */
+      margin-bottom: 5px; /* Add some space between the options */
+      }
+  
+      .correct {
+      color: green;
+      font-weight: bold;
+      }
+  
+      .incorrect {
+          color: red;
+          font-weight: bold;
+      }
+  
+      .feedback-correct {
+      background-color: #e6f7ff; /* Light blue background for correct answers */
+      border: 1px solid #b3d8ff; /* Optional: border for the box */
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      }
+  
+      .feedback-incorrect {
+      background-color: #ffdddd; /* Even lighter red background for incorrect/unanswered */
+      border: 1px solid #ffcccc; /* Light red border, adjust as needed */
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      }
+
+      /* Initial state of dropdown content is not displayed */
+    .dropdown-content {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* Styling for when dropdown content is shown */
+    .dropdown-content.show {
+        display: block;
+    }
+
+    a[onclick^="toggleDropdown"] i {
+    margin-left: 20px; /* Adjust the value as needed for more or less space */
+    }
+
+
+      </style>  
+    </head>
+    <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <h1><a href="../../../index.html" class="logo">Thinkwise.in</a></h1>
+        <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a href="../../../index.html"><span class="fa fa-home mr-3"></span> Home</a>
+            </li>
+            <li>
+                <a > STANDARD 10 BOOK BACK</a>
+                <ul class="list-unstyled">
+                </ul>
+            </li>
+            <li>
+                <!-- Toggle Button for the Maths Section -->
+                <a href="#" onclick="toggleDropdown('mathsSection')">Maths <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                <!-- Container for the Maths Section -->
+                <div id="mathsSection" class="dropdown-content">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter1')">Chapter 1 - Relations and Functions <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter1" class="dropdown-content">
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_1.html">1.1 Introduction</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_2.html">1.2 Ordered Pair</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_3.html">1.3 Cartesian Product</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_4.html">1.4 Relations</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_5.html">1.5 Functions</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_6.html">1.6 Representation of Functions</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_7.html">1.7 Types of Functions</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_8.html">1.8 Special Cases of Functions</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_9.html">1.9 Composition of Functions</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 1/Chapter_1_Section_10.html">1.10 Identifying the Graphs</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter2')">Chapter 2 - Numbers and Sequences <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter2" class="dropdown-content">
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_1.html">2.1 Introduction</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_2.html">2.2 Euclid’s Division Lemma</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_3.html">2.3 Euclid’s Division Algorithm</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_4.html">2.4 Fundamental Theorem of Arithmetic</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_5.html">2.5 Modular Arithmetic</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_6.html">2.6 Sequences</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_7.html">2.7 Arithmetic Progression</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_8.html">2.8 Series</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_9.html">2.9 Geometric Progression</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_10.html">2.10 Sum to n terms of a Geometric Progression</a></li>
+                                <li><a href="Subjects/10th_Maths/Chapter 2/Chapter_2_Section_11.html">2.11 Special Series</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter3')">Chapter 3 - Algebra <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter3" class="dropdown-content">
+                                <li><a href="Maths/Chapter3/Section3_1.html">3.1 Introduction</a></li>
+                                <li><a href="Maths/Chapter3/Section3_2.html">3.2 Simultaneous Linear Equations in Three Variables</a></li>
+                                <li><a href="Maths/Chapter3/Section3_3.html">3.3 GCD and LCM of Polynomials</a></li>
+                                <li><a href="Maths/Chapter3/Section3_4.html">3.4 Rational Expressions</a></li>
+                                <li><a href="Maths/Chapter3/Section3_5.html">3.5 Square Root of Polynomials</a></li>
+                                <li><a href="Maths/Chapter3/Section3_6.html">3.6 Quadratic Equations</a></li>
+                                <li><a href="Maths/Chapter3/Section3_7.html">3.7 Graph of Variations</a></li>
+                                <li><a href="Maths/Chapter3/Section3_8.html">3.8 Quadratic Graphs</a></li>
+                                <li><a href="Maths/Chapter3/Section3_9.html">3.9 Matrices</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter4')">Chapter 4 - Geometry <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter4" class="dropdown-content">
+                                <li><a href="Maths/Chapter4/Section4_1.html">4.1 Introduction</a></li>
+                                <li><a href="Maths/Chapter4/Section4_2.html">4.2 Similarity</a></li>
+                                <li><a href="Maths/Chapter4/Section4_3.html">4.3 Thales Theorem and Angle Bisector Theorem</a></li>
+                                <li><a href="Maths/Chapter4/Section4_4.html">4.4 Pythagoras Theorem</a></li>
+                                <li><a href="Maths/Chapter4/Section4_5.html">4.5 Circles and Tangents</a></li>
+                                <li><a href="Maths/Chapter4/Section4_6.html">4.6 Concurrency Theorems</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter5')">Chapter 5 - Coordinate Geometry <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter5" class="dropdown-content">
+                                <li><a href="Maths/Chapter5/Section5_1.html">5.1 Introduction</a></li>
+                                <li><a href="Maths/Chapter5/Section5_2.html">5.2 Area of a Triangle</a></li>
+                                <li><a href="Maths/Chapter5/Section5_3.html">5.3 Area of a Quadrilateral</a></li>
+                                <li><a href="Maths/Chapter5/Section5_4.html">5.4 Inclination of a Line</a></li>
+                                <li><a href="Maths/Chapter5/Section5_5.html">5.5 Straight Line</a></li>
+                                <li><a href="Maths/Chapter5/Section5_6.html">5.6 General Form of a Straight Line</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter6')">Chapter 6 - Trigonometry <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter6" class="dropdown-content">
+                                <li><a href="Maths/Chapter6/Section6_1.html">6.1 Introduction</a></li>
+                                <li><a href="Maths/Chapter6/Section6_2.html">6.2 Trigonometric Identities</a></li>
+                                <li><a href="Maths/Chapter6/Section6_3.html">6.3 Heights and Distances</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter7')">Chapter 7 - Mensuration <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter7" class="dropdown-content">
+                                <li><a href="Maths/Chapter7/Section7_1.html">7.1 Introduction</a></li>
+                                <li><a href="Maths/Chapter7/Section7_2.html">7.2 Surface Area</a></li>
+                                <li><a href="Maths/Chapter7/Section7_3.html">7.3 Volume</a></li>
+                                <li><a href="Maths/Chapter7/Section7_4.html">7.4 Volume and Surface Area of Combined Solids</a></li>
+                                <li><a href="Maths/Chapter7/Section7_5.html">7.5 Conversion of Solids from one Shape to another with no change in Volume</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" onclick="toggleDropdown('chapter8')">Chapter 8 - Statistics and Probability <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul id="chapter8" class="dropdown-content">
+                                <li><a href="Maths/Chapter8/Section8_1.html">8.1 Introduction</a></li>
+                                <li><a href="Maths/Chapter8/Section8_2.html">8.2 Measures of Dispersion</a></li>
+                                <li><a href="Maths/Chapter8/Section8_3.html">8.3 Coefficient of Variation</a></li>
+                                <li><a href="Maths/Chapter8/Section8_4.html">8.4 Probability</a></li>
+                                <li><a href="Maths/Chapter8/Section8_5.html">8.5 Algebra of Events</a></li>
+                                <li><a href="Maths/Chapter8/Section8_6.html">8.6 Addition Theorem of Probability</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            <li>
+                <a href="#" ><span class="fa fa-sticky-note mr-3"></span> Science</a>
+                <ul class="list-unstyled">
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 1 - Laws of Motion</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 2 - Optics</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 3 - Thermal Physics</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 4 - Electricity</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 5 - Acoustics</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 6 - Nuclear Physics</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 7 - Atoms and Molecules</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 8 - Periodic Classification of Elements</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 9 - Solutions</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 10 - Types of Chemical Reactions</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 11 - Carbon and its Compounds</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 12 - Structural Organisation of Animals</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 13 - Transportation in Plants and Circulation in Animals</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 14 - Nervous System</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 15 - Plant and Animal Hormones</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 16 - Reproduction in Plants and Animals</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 17 - Genetics</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 18 - Origin and Evolution of Life</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 19 - Breeding and Biotechnology</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 20 - Health and Diseases</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 21 - Environmental Management</a></li>
+                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 22 - Visual Communication</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#term3" ><span class="fa fa-sticky-note mr-3"></span> Social Science</a>
+                <ul class="list-unstyled">
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 1 - Diversity of Organisms [Biology]</a></li>
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 2 - Our Environment [Biology]</a></li>
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 3 - Chemistry in Daily Life [Chemistry]</a></li>
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 4 - Light [Physics]</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#term3" ><span class="fa fa-sticky-note mr-3"></span> Tamil</a>
+                <ul class="list-unstyled">
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 1 - Diversity of Organisms [Biology]</a></li>
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 2 - Our Environment [Biology]</a></li>
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 3 - Chemistry in Daily Life [Chemistry]</a></li>
+                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 4 - Light [Physics]</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4"><b>Standard 10 - Science<br>UNIT 1 - </b></h2>
+        <!-- News With Sidebar Start -->
+        <div class="container-fluid pt-4 mb-3">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-13">
+                            <!-- Question 1: Plants with medicinal value are called -->
+                            <div class="col-lg-12">
+                            <div class="position-relative mb-3">
+                                <div class="bg-white border border-top-0 p-1">
+                                    <div class="mb-2" style="display: block;">
+                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 1: Plants with medicinal value are called</b></p>
+                                        <form id="quiz-form-q1">
+                                            <div class="question horizontal-options">
+                                                <label><input type="radio" name="question1" value="A"> pulses</label>
+                                                <label><input type="radio" name="question1" value="B"> scented plants</label>
+                                                <label><input type="radio" name="question1" value="C"> medicinal plants</label>
+                                                <label><input type="radio" name="question1" value="D"> barks</label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- News With Sidebar End -->
+
+      <!-- Submit Button (placed inside the main content container) -->
+      <div class="col-lg-12 text-center">
+          <button id="submit-quiz" class="btn btn-primary"><b>Submit Quiz</b></button>
+      </div>
+
+      <div id="result" class="col-lg-12"></div>
+      </div>
+		</div>
+  
+    <script>
+      document.getElementById('submit-quiz').addEventListener('click', function() {
+          // Disable the submit button to prevent multiple submissions
+          this.disabled = true;
+
+          let score = 0;
+          const resultsContainer = document.getElementById('result');
+          resultsContainer.innerHTML = ''; // Clear previous results
+
+          // Define correct answers and explanations for each question
+          const answerKey = {
+              question1: { correct: 'D', explanation: 'A measuring tape is flexible and can be extended vertically to measure the height of a tree, making it more suitable than the other options listed.' },
+              question2: { correct: 'C', explanation: 'There are 100 centimeters in a meter, so 7 meters equals 700 centimeters (7 m × 100 cm/m = 700 cm).' },
+              question3: { correct: 'A', explanation: 'A physical quantity is a property of a material or system that can be quantified by measurement.' },
+              question4: { correct: 'C', explanation: 'This is the correct order of length units from largest to smallest. 1 kilometer (km) is larger than 1 meter (m), which is larger than 1 centimeter (cm), which in turn is larger than 1 millimeter (mm).' },
+              question5: { correct: 'B', explanation: 'This position minimizes parallax error, ensuring the measurement is as accurate as possible.' }
+          };
+
+          // Check answers and provide feedback
+          document.querySelectorAll('form').forEach((form, index) => {
+              const questionId = `question${index + 1}`;
+              const correctAnswer = answerKey[questionId].correct;
+              const explanation = answerKey[questionId].explanation;
+              const userAnswer = form.querySelector('input[type="radio"]:checked')?.value;
+              const feedbackElement = document.createElement('div');
+              feedbackElement.className = userAnswer === correctAnswer ? 'feedback-correct' : 'feedback-incorrect';
+
+              let feedbackHtml = userAnswer === correctAnswer ?
+                  `<p class="correct">Correct!</p>` :
+                  `<p class="incorrect">${userAnswer ? 'Incorrect!' : 'You did not answer this question.'}</p>`;
+
+              feedbackHtml += `<p style="color: black; font-weight: bold;">Correct answer: ${correctAnswer}.${userAnswer ? ` Your answer: ${userAnswer}.` : ''}</p>`;
+              feedbackHtml += `<p style="color: black; font-weight: bold;">Explanation:</p><p style="color: black;">${explanation}</p>`;
+              feedbackElement.innerHTML = feedbackHtml;
+
+              if (userAnswer === correctAnswer) {
+                  score++;
+              }
+
+              form.parentNode.appendChild(feedbackElement);
+          });
+
+          // Display the score centrally below the 'Submit Quiz' button
+          resultsContainer.innerHTML = `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${Object.keys(answerKey).length}</p></div>`;
+
+          // If needed, also display the score right below the quiz heading, centered
+          const quizHeading = document.querySelector('.section-title');
+          if (quizHeading) {
+              quizHeading.insertAdjacentHTML('afterend', `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${Object.keys(answerKey).length}</p></div>`);
+          }
+      });
+    </script>
+    <script>
+        function toggleDropdown(id) {
+            var element = document.getElementById(id);
+            var icon = element.previousElementSibling.querySelector('i.fa'); // Adjust this if the structure is different for the Maths toggle
+            if (element.classList.contains('show')) {
+                element.classList.remove('show');
+                if (icon) icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+            } else {
+                element.classList.add('show');
+                if (icon) icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+            }
+        }
+    </script>
+  </body>
+</html>
