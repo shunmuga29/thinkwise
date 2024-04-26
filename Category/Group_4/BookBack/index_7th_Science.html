@@ -1,285 +1,340 @@
 <!doctype html>
 <html lang="en">
-  
-  <head>
-  	<title>Thinkswise - Standard 6</title>
+<head>
+    <title>Thinkswise - Standard 7 Science</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
-    
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-      .question-text {
-          margin-bottom: 10px; /* This adds space below the question text */
-      }
-  
-      .question label {
-      color: black; /* Sets the text color to black */
-      }
-  
-      .question {
-          display: block;
-          padding-left: 30px; /* This keeps the options aligned with the question text */
-          margin-top: 10px; /* This adds space above the options */
-      }
-  
-      .horizontal-options label {
-      margin-right: 15px; /* Space between options */
-      /* No 'display: block;' needed since it's horizontal by default */
-      }
-  
-  
-      .vertical-options label {
-      display: block; /* This will stack the labels vertically */
-      margin-right: 0; /* Reset any horizontal margin if necessary */
-      margin-bottom: 5px; /* Add some space between the options */
-      }
-  
-      .correct {
-      color: green;
-      font-weight: bold;
-      }
-  
-      .incorrect {
-          color: red;
-          font-weight: bold;
-      }
-  
-      .feedback-correct {
-      background-color: #e6f7ff; /* Light blue background for correct answers */
-      border: 1px solid #b3d8ff; /* Optional: border for the box */
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      }
-  
-      .feedback-incorrect {
-      background-color: #ffdddd; /* Even lighter red background for incorrect/unanswered */
-      border: 1px solid #ffcccc; /* Light red border, adjust as needed */
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      }
+        .question-text {
+            margin-bottom: 10px;
+        }
+        .question label {
+            color: #0f1624;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question p {
+            color: #0f1624; 
+        }
+        
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+        .feedback-correct {
+            background-color: #e6f7ff;
+            border: 1px solid #b3d8ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .feedback-incorrect {
+            background-color: #ffdddd;
+            border: 1px solid #ffcccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #submit-quiz {
+            margin-right: 10px; /* Adjust the space to your liking */
+        }
 
-      </style>  
-    </head>
-    <body>
-		
-		<div class="wrapper d-flex align-items-stretch">
-      <nav id="sidebar">
-        <h1><a href="../../../index.html" class="logo">Thinkwise.in</a></h1>
-        <ul class="list-unstyled components mb-5">
-            <li class="active">
-                <a href="../../../index.html"><span class="fa fa-home mr-3"></span> Home</a>
-            </li>
-            <li>
-                <a > STANDARD 6 SCIENCE BOOK BACK</a>
-                <ul class="list-unstyled">
-                </ul>
-            </li>
-            <li>
-                <a href="#term1" ><span class="fa fa-sticky-note mr-3"></span> Term 1</a>
-                <ul class="list-unstyled">
-                    <li><a href="Terms/Term1/Term1Unit1.html">Unit 1 - The World of Plants [Biology]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit2.html">Unit 2 - Food Habit [Biology]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit3.html">Unit 3 - Changes around us [Chemistry]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit4.html">Unit 4 - Measurement and Motion [Physics]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit5.html">Unit 5 - Magnetism [Physics]</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" ><span class="fa fa-sticky-note mr-3"></span> Term 2</a>
-                <ul class="list-unstyled">
-                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 1 - Cell Structure [Biology]</a></li>
-                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 2 - Separation of Subtances [Chemistry]</a></li>
-                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 3 - Types of Energy [Physics]</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#term3" ><span class="fa fa-sticky-note mr-3"></span> Term 3</a>
-                <ul class="list-unstyled">
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 1 - Diversity of Organisms [Biology]</a></li>
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 2 - Our Environment [Biology]</a></li>
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 3 - Chemistry in Daily Life [Chemistry]</a></li>
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 4 - Light [Physics]</a></li>
-                </ul>
-            </li>
-        </ul>
-      </nav>
-        <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4"><b>Standard 6 - Term 1 <br>UNIT 1 - The World of Plants</b></h2>
-        <!-- News With Sidebar Start -->
-        <div class="container-fluid pt-4 mb-3">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-13">
-                            <!-- Question 1: Plants with medicinal value are called -->
-                            <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 1: Plants with medicinal value are called</b></p>
-                                        <form id="quiz-form-q1">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question1" value="A"> pulses</label>
-                                                <label><input type="radio" name="question1" value="B"> scented plants</label>
-                                                <label><input type="radio" name="question1" value="C"> medicinal plants</label>
-                                                <label><input type="radio" name="question1" value="D"> barks</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        #reset-quiz {
+            margin-left: 10px; /* Adjust the space to your liking */
+        }
 
-                        <!-- Question 2: Of the following, which is the seed part of the plant used as food? -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 2: Of the following, which is the seed part of the plant used as food?</b></p>
-                                        <form id="quiz-form-q2">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question2" value="A"> thoor dhal</label>
-                                                <label><input type="radio" name="question2" value="B"> veldt grape</label>
-                                                <label><input type="radio" name="question2" value="C"> banana</label>
-                                                <label><input type="radio" name="question2" value="D"> turmeric</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <h1><a href="../../../../index.html" class="logo">Thinkwise.in</a></h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="../../../index.html"><span class="fa fa-home mr-3"></span> Home</a>
+                </li>
+                <li><a href="#" data-unit="#">STANDARD 7 SCIENCE BOOK BACK</a></li>
+                <!--Standard 7 - Term 1 -->
+                <li><a href="#" data-unit="#">TERM 1</a></li>
+                <li><a href="#Term1-unit1" data-unit="Term1-unit1">Unit 1 - Measurement</a></li>
+                <li><a href="#Term1-unit2" data-unit="Term1-unit2">Unit 2 - Force and Motion</a></li>
+                <li><a href="#Term1-unit3" data-unit="Term1-unit3">Unit 3 - Matter Around Us</a></li>
+                <li><a href="#Term1-unit4" data-unit="Term1-unit4">Unit 4 - Atomic Structure</a></li>
+                <li><a href="#Term1-unit5" data-unit="Term1-unit5">Unit 5 - Reproduction and Modification in Plants</a></li>
+                <li><a href="#Term1-unit6" data-unit="Term1-unit6">Unit 6 - Health and Hygiene</a></li>
+                <li><a href="#Term1-unit7" data-unit="Term1-unit7">Unit 7 - Visual Communication</a></li>
+                <!--Standard 7 - Term 2 -->
+                <li><a href="#" data-unit="#">TERM 2</a></li>
+                <li><a href="#Term2-unit1" data-unit="Term2-unit1">Unit 1 - Heat and Temperature</a></li>
+                <li><a href="#Term2-unit2" data-unit="Term2-unit2">Unit 2 - Electricity</a></li>
+                <li><a href="#Term2-unit3" data-unit="Term2-unit3">Unit 3 - Changes Around Us</a></li>
+                <li><a href="#Term2-unit4" data-unit="Term2-unit4">Unit 4 - Cell Biology</a></li>
+                <li><a href="#Term2-unit5" data-unit="Term2-unit5">Unit 5 - Basis of Classification</a></li>
+                <li><a href="#Term2-unit6" data-unit="Term2-unit6">Unit 6 - Digital Painting</a></li>
+                <!--Standard 7 - Term 3 -->
+                <li><a href="#" data-unit="#">TERM 3</a></li>
+                <li><a href="#Term3-unit1" data-unit="Term3-unit1">Unit 1 - Light 1</a></li>
+                <li><a href="#Term3-unit2" data-unit="Term3-unit2">Unit 2 - Universe and Space</a></li>
+                <li><a href="#Term3-unit3" data-unit="Term3-unit3">Unit 3 - Polymer Chemistry</a></li>
+                <li><a href="#Term3-unit4" data-unit="Term3-unit4">Unit 4 - Chemistry in Daily Life</a></li>
+                <li><a href="#Term3-unit5" data-unit="Term3-unit5">Unit 5 - Animals in Daily Life  </a></li>
+                <li><a href="#Term3-unit6" data-unit="Term3-unit6">Unit 6 - Visual Communication </a></li>
+            </ul>
+        </nav>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <h2 class="mb-4" id="content-heading">Please select a unit</h2>
+            <div id="quiz-container"></div>
+            <div id="submit-area"></div>
+            <div id="results-container"></div>
+        </div>
+    </div>
 
-                        <!-- Question 3: Select the food-related industry from the following -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 3: Select the food-related industry from the following</b></p>
-                                        <form id="quiz-form-q3">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question3" value="A"> coir making</label>
-                                                <label><input type="radio" name="question3" value="B"> gardening</label>
-                                                <label><input type="radio" name="question3" value="C"> cotton cultivation</label>
-                                                <label><input type="radio" name="question3" value="D"> pickle-making</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Question 4: Name the unripe fruit that we have to be consumed for blood purification. -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 4: Name the unripe fruit that we have to be consumed for blood purification.</b></p>
-                                        <form id="quiz-form-q4">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question4" value="A"> gooseberry</label>
-                                                <label><input type="radio" name="question4" value="B"> neem</label>
-                                                <label><input type="radio" name="question4" value="C"> veldt grape</label>
-                                                <label><input type="radio" name="question4" value="D"> carry me seed</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Question 5: Name the tree used in paper industry. -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 5: Name the tree used in paper industry.</b></p>
-                                        <form id="quiz-form-q5">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question5" value="A"> Teak</label>
-                                                <label><input type="radio" name="question5" value="B"> Eucalyptus</label>
-                                                <label><input type="radio" name="question5" value="C"> Coconut tree</label>
-                                                <label><input type="radio" name="question5" value="D"> Sandalwood tree</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- News With Sidebar End -->
-
-      <!-- Submit Button (placed inside the main content container) -->
-      <div class="col-lg-12 text-center">
-          <button id="submit-quiz" class="btn btn-primary"><b>Submit Quiz</b></button>
-      </div>
-
-      <div id="result" class="col-lg-12"></div>
-      </div>
-		</div>
-  
     <script>
-      document.getElementById('submit-quiz').addEventListener('click', function() {
-          // Disable the submit button to prevent multiple submissions
-          this.disabled = true;
+        const quizData = {
+            "Term1-unit1": [
+                {"question": "Which of the following is a derived quantity?", "options": ["a) mass", "b) time", "c) area", "d) length"], "correct": "c) area", "explanation": "Area is a derived quantity because it is calculated from length measurements."},
+                {"question": "Which of the following is correct?", "options": ["a) 1L = 1cc", "b) 1L = 10 cc", "c) 1L = 100 cc", "d) 1L = 1000 cc"], "correct": "d) 1L = 1000 cc", "explanation": "1 liter equals 1000 cubic centimeters."},
+                {"question": "SI unit of density is", "options": ["a) kg/m2", "b) kg/m3", "c) kg/m", "d) g/m3"], "correct": "b) kg/m3", "explanation": "Density is mass per unit volume, measured in kg/m3."},
+                {"question": "Two spheres have mass and volume in the ratio 2:1. The ratio of their density is", "options": ["a) 1:2", "b) 2:1", "c) 4:1", "d) 1:4"], "correct": "b) 2:1", "explanation": "If mass is twice that of volume, density, being mass divided by volume, is also doubled."},
+                {"question": "Light year is the unit of", "options": ["a) distance", "b) time", "c) density", "d) Both length and time"], "correct": "a) distance", "explanation": "A light year is a measure of distance, representing how far light travels in one year."}
+            ],
+            "Term1-unit2": [
+                {"question": "A particle is moving in a circular path of radius r. The displacement after half a circle would be", "options": ["a) Zero", "b) R", "c) 2 r", "d) r / 2"], "correct": "c) 2 r", "explanation": "Displacement is the straight line distance between starting and ending points, which equals 2r for half a circle."},
+                {"question": "Which of the following figures represent uniform motion of a moving object correctly?", "options": ["a) Graph 1", "b) Graph 2", "c) Graph 3", "d) Graph 4"], "correct": "a) Graph 1", "explanation": "Uniform motion is represented by a straight line on a distance-time graph."},
+                {"question": "Suppose a boy is enjoying a ride on a merry go round which is moving with a constant speed of 10 m/s. It implies that the boy is", "options": ["a) at rest", "b) moving with no acceleration", "c) in accelerated motion", "d) moving with uniform velocity"], "correct": "c) in accelerated motion", "explanation": "Even though the speed is constant, the direction changes, which implies acceleration."},
+                {"question": "From the given v-t graph it can be inferred that an object is", "options": ["a) in uniform motion", "b) at rest", "c) in non-uniform motion", "d) moving with uniform acceleration"], "correct": "c) in non-uniform motion", "explanation": "A non-linear v-t graph indicates non-uniform motion."},
+                {"question": "How can we increase the stability of an object?", "options": ["a) Lowering the centre of gravity", "b) Raising the centre of gravity", "c) Increasing the height of the object", "d) Shortening the base of the object"], "correct": "a) Lowering the centre of gravity", "explanation": "Lowering the center of gravity increases stability."}
+            ],
+            "Term1-unit3": [
+                {"question": "Which one of the following is an example for a metal?", "options": ["a) Iron", "b) Oxygen", "c) Helium", "d) Water"], "correct": "a) Iron", "explanation": "Iron is a metal, known for its solid state at room temperature and metallic properties."},
+                {"question": "Oxygen, hydrogen, and sulphur are examples for", "options": ["a) metals", "b) non-metals", "c) metalloids", "d) inert gases"], "correct": "b) non-metals", "explanation": "Oxygen, hydrogen, and sulphur are all non-metals, characterized by their lack of metallic properties."},
+                {"question": "Which of the following is a short and scientific way of representing one molecule of an element or compound?", "options": ["a) Mathematical formula", "b) Chemical formula", "c) Mathematical symbol", "d) Chemical symbol"], "correct": "b) Chemical formula", "explanation": "A chemical formula represents the elements present in a compound and the ratio of these elements."},
+                {"question": "The metal which is liquid at room temperature is", "options": ["a) chlorine", "b) sulphur", "c) mercury", "d) silver"], "correct": "c) mercury", "explanation": "Mercury is the only metal that is liquid at room temperature."},
+                {"question": "An element which is always lustrous, malleable and ductile is", "options": ["a) non-metal", "b) metal", "c) metalloid", "d) gas"], "correct": "b) metal", "explanation": "Metals are typically lustrous, malleable, and ductile, unlike non-metals or metalloids."} 
+            ],
+            "Term1-unit4": [
+                {"question": "The basic unit of matter is", "options": ["a) element", "b) atom", "c) molecule", "d) electron"], "correct": "b) atom", "explanation": "The atom is the fundamental unit of matter that defines the chemical elements."},
+                {"question": "The sub-atomic particle which revolves around the nucleus is", "options": ["a) atom", "b) neutron", "c) electron", "d) proton"], "correct": "c) electron", "explanation": "Electrons are the sub-atomic particles that revolve around the nucleus in atoms."},
+                {"question": "_______ is positively charged.", "options": ["a) Proton", "b) Electron", "c) Molecule", "d) Neutron"], "correct": "a) Proton", "explanation": "Protons, found within an atom's nucleus, carry a positive electrical charge."},
+                {"question": "The atomic number of an atom is the", "options": ["a) number of neutrons", "b) number of protons", "c) total number of protons and neutrons", "d) number of atoms"], "correct": "b) number of protons", "explanation": "The atomic number of an element is defined by its number of protons."},
+                {"question": "Nucleons comprises of", "options": ["a) protons and electrons", "b) neutrons and electrons", "c) protons and neutrons", "d) neutrons and positron"], "correct": "c) protons and neutrons", "explanation": "Nucleons are the components of the nucleus of an atom, which include protons and neutrons."}
+            ],
+            "Term1-unit5": [
+                {"question": "Vegetative propagation by leaves takes place in", "options": ["a) bryophyllum", "b) fungi", "c) virus", "d) bacteria"], "correct": "a) bryophyllum", "explanation": "Bryophyllum can reproduce vegetatively through its leaves."},
+                {"question": "Asexual reproduction in yeast is", "options": ["a) spore formation", "b) fragmentation", "c) pollination", "d) budding"], "correct": "d) budding", "explanation": "Yeast commonly reproduces asexually by budding."},
+                {"question": "Reproductive part of a plant is", "options": ["a) root", "b) stem", "c) leaf", "d) flower"], "correct": "d) flower", "explanation": "Flowers are the reproductive parts of flowering plants."},
+                {"question": "Pollinators are", "options": ["a) wind", "b) water", "c) insect", "d) All the above"], "correct": "d) All the above", "explanation": "Pollination can occur through wind, water, and insects."},
+                {"question": "Climbing roots are seen in", "options": ["a) betel", "b) black pepper", "c) Both of them", "d) None of them"], "correct": "c) Both of them", "explanation": "Both betel and black pepper plants have climbing roots."}
+            ],
+            "Term1-unit6": [
+                {"question": "Ravi has sound mind and physically fit body. It refers to", "options": ["a) hygiene", "b) health", "c) cleanliness", "d) wealth"], "correct": "b) health", "explanation": "Having a sound mind and a physically fit body refers to good health."},
+                {"question": "Sleep is not only good for our body, but it is also good for", "options": ["a) enjoyment", "b) relaxation", "c) mind", "d) environment"], "correct": "c) mind", "explanation": "Sleep benefits both the body and the mind."},
+                {"question": "Our living place should be", "options": ["a) open", "b) closed", "c) clean", "d) unclean / untidy"], "correct": "c) clean", "explanation": "Maintaining a clean living space is essential for health and hygiene."},
+                {"question": "Tobacco chewing causes", "options": ["a) anemia", "b) periodontitis", "c) tuberculosis", "d) pneumonia"], "correct": "b) periodontitis", "explanation": "Chewing tobacco is a major risk factor for periodontitis, a serious gum disease."},
+                {"question": "The first aid is to", "options": ["a) save money", "b) prevent scars", "c) prevent the medical care", "d) relieve the pain"], "correct": "d) relieve the pain", "explanation": "The primary purpose of first aid is to relieve pain and prevent further injury."}
+            ],
+            "Term1-unit7": [
+                {"question": "Which of the following is an example for animation?", "options": ["a) Sound communication", "b) Visual communication", "c) Vector communication", "d) Raster communication"], "correct": "b) Visual communication", "explanation": "Animation is a type of visual communication."},
+                {"question": "Who uses the photoshop software more?", "options": ["a) Teacher", "b) Doctor", "c) Painter", "d) Photographer"], "correct": "d) Photographer", "explanation": "Photographers commonly use Photoshop for editing and enhancing images."},
+                {"question": "Which option is used in the Microsoft Photostory to upload the photos?", "options": ["a) Begin a Story", "b) Import Pictures", "c) Settings", "d) View your Story"], "correct": "b) Import Pictures", "explanation": "The 'Import Pictures' option in Microsoft Photostory is used to upload photos."},
+                {"question": "Which technology shows the computer-drawn pictures as real picture?", "options": ["a) Inkscape", "b) Photo Story", "c) Virtual Reality", "d) Adobe Illustrator"], "correct": "c) Virtual Reality", "explanation": "Virtual reality technology can make computer-drawn pictures appear as real images."},
+                {"question": "Which technology uses pixels to create pictures?", "options": ["a) Vector", "b) Raster", "c) Both", "d) None"], "correct": "b) Raster", "explanation": "Raster graphics use pixels to create images."},
+                {"question": "Which software is used to create symbols?", "options": ["a) Photoshop", "b) Illustrator", "c) Vector Graphics", "d) Photostory"], "correct": "b) Illustrator", "explanation": "Adobe Illustrator is widely used for creating symbols and vector graphics."}
+            ],
+            "Term2-unit1": [
+                {"question": "International unit of measuring temperature is", "options": ["a) Kelvin", "b) Fahrenheit", "c) Celsius", "d) Joule"], "correct": "a) Kelvin", "explanation": "Kelvin is the SI unit for temperature."},
+                {"question": "In a thermometer when the bulb comes in contact with a hot object, the liquid inside it", "options": ["a) expands", "b) contracts", "c) remains the same", "d) none of the above"], "correct": "a) expands", "explanation": "Thermometric liquids expand when heated."},
+                {"question": "The body temperature of a healthy man is", "options": ["a) 0°C", "b) 37°C", "c) 98°C", "d) 100°C"], "correct": "b) 37°C", "explanation": "The normal body temperature of a healthy person is approximately 37°C."},
+                {"question": "Mercury is often used in laboratory thermometers because it", "options": ["a) is a harmless liquid", "b) is silvery in colour and is attractive in appearance", "c) Expands uniformly", "d) is a low cost liquid"], "correct": "c) Expands uniformly", "explanation": "Mercury expands uniformly making it ideal for precise temperature measurements."},
+                {"question": "Which of the following temperature conversions is incorrect", "options": ["a) -273.15°C = 0 K", "b) -123°C = 150.15 K", "c) +127°C = 400.15 K", "d) +450°C = 723.15 K"], "correct": "d) +450°C = 723.15 K", "explanation": "The correct conversion for 450°C to Kelvin is 450 + 273.15 = 723.15 K."}
+            ],
+            "Term2-unit2": [
+                {"question": "In the circuit diagram below, 10 units of electric charge move past point x every second. What is the current in the circuit?", "options": ["a) 10 A", "b) 1 A", "c) 10 V", "d) 1 V"], "correct": "b) 1 A", "explanation": "Current is the rate of flow of charge. If 10 coulombs pass each second, the current is 10 amperes."},
+                {"question": "In the circuit shown, which switches (L, M, or N) must be closed to light up the bulb?", "options": ["a) switch L only", "b) switch M only", "c) Switch M and N only", "d) either switch L or switches M and N"], "correct": "d) either switch L or switches M and N", "explanation": "Switch L alone or both switches M and N together must be closed to complete the circuit."},
+                {"question": "Small amounts of electrical current are measured in milliampere (mA). How many milliampere are there in 0.25 A ?", "options": ["a) 2.5 mA", "b) 25 mA", "c) 250 mA", "d) 2500 mA"], "correct": "c) 250 mA", "explanation": "1 ampere is 1000 milliamperes, so 0.25 A is 250 mA."}
+            ],
+            "Term2-unit3": [
+                {"question": "When a woolen yarn is knitted to get a sweater, the change can be classified as", "options": ["a) physical change", "b) chemical change", "c) endothermic change", "d) exothermic change"], "correct": "a) physical change", "explanation": "Knitting wool into a sweater is a physical change as it involves changing shape but not substance."},
+                {"question": "___________ of the following are endothermic changes.", "options": ["a) Condensation and melting", "b) Condensation and freezing", "c) Evaporation and melting", "d) Evaporation and freezing"], "correct": "c) Evaporation and melting", "explanation": "Evaporation and melting both require energy input, thus they are endothermic."},
+                {"question": "The chemical change is ____________.", "options": ["a) water to clouds", "b) growth of a tree", "c) cow dung to bio-gas.", "d) ice-cream to molten ice-cream"], "correct": "c) cow dung to bio-gas.", "explanation": "The conversion of cow dung into bio-gas is a chemical process involving biological decomposition."},
+                {"question": "________is an example of a periodic change.", "options": ["a) Earthquake", "b) Formation of rainbow in sky", "c) Occurrence of tides in seas.", "d) Showering of rain"], "correct": "c) Occurrence of tides in seas.", "explanation": "Tides are periodic due to the consistent gravitational effects of the moon and sun."},
+                {"question": "_________ is not a chemical change.", "options": ["a) Dissolution of ammonia in water", "b) Dissolution of carbon-di-oxide in water", "c) Dissolution of oxygen in water", "d) Melting of polar ice caps"], "correct": "d) Melting of polar ice caps", "explanation": "Melting of ice is a physical change as it involves only a change in state."}
+            ],
+            "Term2-unit4": [
+                {"question": "Basis unit of life is", "options": ["A) Cell", "B) Protoplasm", "C) Cellulose", "D) Nucleus"], "correct": "A) Cell", "explanation": "The cell is considered the basic unit of life as it is the smallest unit capable of independent existence and performing the essential functions of life."},
+                {"question": "I am the outer most layer of an animal cell. Who am I?", "options": ["A) Cell wall", "B) Nucleus", "C) Cell membrane", "D) Nuclear membrane"], "correct": "C) Cell membrane", "explanation": "The cell membrane is the outermost layer of animal cells, responsible for controlling what enters and leaves the cell."},
+                {"question": "Which part of the cell is called the brain of the cell?", "options": ["A) Lysosome", "B) Ribosome", "C) Mitochondria", "D) Nucleus"], "correct": "D) Nucleus", "explanation": "The nucleus is often referred to as the 'brain' of the cell because it regulates cell activity and stores genetic material."},
+                {"question": "_______ helps in cell division", "options": ["A) Endoplasmic reticulum", "B) Golgi complex", "C) Centriole", "D) Nucleus"], "correct": "C) Centriole", "explanation": "Centrioles play a key role in cell division by helping in the formation of the spindle fibers that separate chromosomes."},
+                {"question": "Suitable term for the various components of cell is", "options": ["A) Tissue", "B) Nucleus", "C) Cell", "D) Cell organelle"], "correct": "D) Cell organelle", "explanation": "Cell organelles are specialized structures within cells that perform specific functions."}
+            ],
+            "Term2-unit5": [
+                {"question": "The following characteristics are essential for classification.", "options": ["a) Similarities", "b) Differences", "c) Both of them", "d) None of them"], "correct": "c) Both of them", "explanation": "Classification involves identifying both similarities and differences among organisms to organize them into groups."},
+                {"question": "Approximately ____________ species of living organisms found on Earth.", "options": ["a) 8.7 million", "b) 8.6 million", "c) 8.5 million", "d) 8.8 million"], "correct": "a) 8.7 million", "explanation": "Scientists estimate that there are approximately 8.7 million species of living organisms on Earth."},
+                {"question": "The largest division of the living world is", "options": ["a) Order", "b) Kingdom", "c) Phylum", "d) Family"], "correct": "b) Kingdom", "explanation": "In biological classification, the kingdom is one of the highest taxonomic ranks."},
+                {"question": "Who proposed the five kingdom of classification?", "options": ["a) Aristotle", "b) Linnaeus", "c) Whittaker", "d) Plato"], "correct": "c) Whittaker", "explanation": "Robert Whittaker proposed the five-kingdom classification system."},
+                {"question": "The binomial name of pigeon is", "options": ["a) Homo sapiens", "b) Rattus rattus", "c) Mangifera indica", "d) Columba livia"], "correct": "d) Columba livia", "explanation": "The binomial name of the common pigeon is Columba livia."}
+            ],
+            "Term2-unit6": [
+                {"question": "Tux paint software is used to", "options": ["a) Paint", "b) Program", "c) Scan", "d) PDF"], "correct": "a) Paint", "explanation": "Tux Paint is a painting software designed for children."},
+                {"question": "Which toolbar is used for drawing and editing controls in Tux paint software?", "options": ["a) Left Side: Toolbar", "b) Right side: Toolbar", "c) Middle: Tool bar", "d) Bottom: Tool bar"], "correct": "a) Left Side: Toolbar", "explanation": "The left side toolbar in Tux Paint is used for drawing and editing controls."},
+                {"question": "What is the shortcut key for undo option?", "options": ["a) Ctrl + Z", "b) Ctrl + R", "c) Ctrl + Y", "d) Ctrl + N"], "correct": "a) Ctrl + Z", "explanation": "Ctrl + Z is the standard shortcut key for the undo operation in many software applications, including Tux Paint."},
+                {"question": "Tux Math software helps in learning the", "options": ["a) Painting", "b) Arithmetic", "c) Programming", "d) Graphics"], "correct": "b) Arithmetic", "explanation": "Tux Math is educational software designed to help children learn arithmetic through interactive activities."},
+                {"question": "In Tux Math, Space cadet option is used for", "options": ["a) Simple addition", "b) Division", "c) Drawing", "d) Multiplication"], "correct": "d) Multiplication", "explanation": "The Space cadet mode in Tux Math includes exercises for practicing multiplication."}
+            ],
+            "Term3-unit1": [
+                {"question": "Light travels only in a", "options": ["a) curved line, shadows", "b) straight line, shadows", "c) straight line, reflection", "d) curved line and then straight line, shadows"], "correct": "b) straight line, shadows", "explanation": "Light travels in a straight line, which is why shadows are formed."},
+                {"question": "Light that hits a mirror gets", "options": ["a) Transmitted", "b) Reflected", "c) Absorbed", "d) Refracted"], "correct": "b) Reflected", "explanation": "When light hits a mirror, it gets reflected."},
+                {"question": "Which surface reflects light well?", "options": ["a) water", "b) compact disc", "c) mirror", "d) stone"], "correct": "c) mirror", "explanation": "Mirrors are designed to reflect light effectively."},
+                {"question": "Light is a form of", "options": ["a) matter", "b) energy", "c) medium", "d) particle"], "correct": "b) energy", "explanation": "Light is a form of energy, not matter."},
+                {"question": "You can see your image in polished floors, but not in wooden table because", "options": ["a) regular reflection takes place in wooden table and irregular reflection in polished floor", "b) regular reflection takes place in polished floor and irregular reflection in wooden table", "c) regular reflection takes place in both polished floor and wooden table", "d) irregular reflection takes place in both polished floor and wooden table"], "correct": "b) regular reflection takes place in polished floor and irregular reflection in wooden table", "explanation": "Polished floors provide a smooth surface for regular reflection, unlike wooden tables which scatter light more irregularly."},
+                {"question": "Choose the translucent substance from the following", "options": ["a) glass", "b) wood", "c) water", "d) clouds"], "correct": "a) glass", "explanation": "Glass is a translucent material, allowing light to pass through but diffusing it."},
+                {"question": "Reflection occurs when the light", "options": ["a) about to reach a surface", "b) approaches a surface", "c) passes through a surface", "d) None of these"], "correct": "b) approaches a surface", "explanation": "Reflection occurs as light approaches and hits a surface."},
+                {"question": "Which of the following is the best reflector of light?", "options": ["a) plastic plate", "b) plane mirror", "c) wall", "d) paper"], "correct": "b) plane mirror", "explanation": "Plane mirrors are optimized for reflection, making them the best reflectors among the options."},
+                {"question": "How will the shadow of a meter stick at noon look in comparison to the one in the morning?", "options": ["a) There will be no shadow", "b) The shadow will be longer and on the opposite side as the sun", "c) The shadow will be shorter and on the same side as the sun", "d) The shadow will be shorter"], "correct": "d) The shadow will be shorter", "explanation": "At noon, when the sun is at its highest, shadows are shorter."},
+                {"question": "The image formed by a pinhole camera is inverted because", "options": ["a) light travels in straight lines", "b) light rays become laterally inverted as they pass through a pinhole camera", "c) light rays pass through the pinhole", "d) light rays get reflected"], "correct": "a) light travels in straight lines", "explanation": "The inversion of the image in a pinhole camera is due to the straight-line path of light passing through the small aperture."}
+            ],
+            "Term3-unit2": [
+                {"question": "The moon takes _________ days to complete one revolution around the Earth", "options": ["a) 25", "b) 26", "c) 27", "d) 28"], "correct": "c) 27", "explanation": "The moon takes approximately 27 days to orbit the Earth."},
+                {"question": "If the Moon is appearing in the sky today near the star Karthikai, the position of the Moon after 27 days is near the star", "options": ["a) Bharani", "b) Karthikai", "c) Rohini", "d) Asvini"], "correct": "b) Karthikai", "explanation": "Since the Moon's orbit is about 27 days, it would appear near the same star after one complete orbit."},
+                {"question": "Telescope was invented by", "options": ["a) Han Lippershey", "b) Galileo", "c) Nicolus Copernicus", "d) Ptolemy"], "correct": "a) Han Lippershey", "explanation": "The telescope is generally credited to Han Lippershey, a Dutch eyeglass maker."},
+                {"question": "The galaxy containing young and hot stars is", "options": ["a) elliptical galaxy", "b) irregular galaxy", "c) cluster", "d) spiral galaxy"], "correct": "d) spiral galaxy", "explanation": "Spiral galaxies, like the Milky Way, often contain many young, hot stars."},
+                {"question": "With the launch of this satellite, ISRO became capable of launching 4 ton heavy satellites.", "options": ["a) GSAT-13", "b) GSAT-14", "c) GSAT-17", "d) GSAT-19"], "correct": "d) GSAT-19", "explanation": "GSAT-19 was a significant satellite launch by ISRO, demonstrating its capability to launch heavier satellites."}
+            ],
+            "Term3-unit3": [
+                {"question": "The first man-made fibre is", "options": ["a) Nylon", "b) Polyester", "c) Rayon", "d) Cotton"], "correct": "a) Nylon", "explanation": "Nylon was the first synthetic fibre, made in the 1930s."},
+                {"question": "Which of the following is the strongest?", "options": ["a) Rayon", "b) Nylon", "c) Acrylic", "d) Polyester"], "correct": "b) Nylon", "explanation": "Nylon is known for its high strength and durability."},
+                {"question": "When you place a natural fibre in a flame it", "options": ["a) melts", "b) burns", "c) gets nothing", "d) explodes"], "correct": "b) burns", "explanation": "Natural fibres, being organic, typically burn when exposed to flame."},
+                {"question": "A synthetic fibre which has similar properties to wool is", "options": ["a) Nylon", "b) Polyester", "c) Acrylic", "d) PVC"], "correct": "c) Acrylic", "explanation": "Acrylic fibres are often used as a substitute for wool because they share similar properties."},
+                {"question": "A good application of plastic is the use of", "options": ["a) Blood bags", "b) Plastic cutlery", "c) Plastic straws", "d) Plastic carry bag"], "correct": "a) Blood bags", "explanation": "Plastic is ideal for making blood bags due to its flexibility, durability, and sterility."}
+            ],
+            "Term3-unit4": [
+                {"question": "A drug effective in the treatment of pneumonia and bronchitis is", "options": ["a) Streptomycin", "b) Chloramphenicol", "c) Penicillin", "d) Sulphaguanidine"], "correct": "a) Streptomycin", "explanation": "Streptomycin is known for its effectiveness against bacterial infections such as pneumonia and bronchitis."},
+                {"question": "Aspirin is", "options": ["a) Antibiotic", "b) Antipyretic", "c) Sedative", "d) Psychedelic"], "correct": "b) Antipyretic", "explanation": "Aspirin is primarily used as an antipyretic to reduce fever and as an analgesic to relieve minor aches and pains."},
+                {"question": "________ are drugs that neutralize stomach acid.", "options": ["a) Antacid", "b) Antipyretic", "c) Analgesic", "d) Antihistaminic"], "correct": "a) Antacid", "explanation": "Antacids are medications that help neutralize stomach acid."},
+                {"question": "The lowest temperature at which a substance catches fire is called its", "options": ["a) Boiling point", "b) Melting point", "c) Critical temperature", "d) Ignition temperature"], "correct": "d) Ignition temperature", "explanation": "Ignition temperature is the lowest temperature at which a material catches fire."},
+                {"question": "Which is the hottest part in the flame of a candle?", "options": ["a) Blue", "b) Yellow", "c) Black", "d) None of these"], "correct": "a) Blue", "explanation": "The blue part of a candle flame is the hottest."}
+            ],
+            "Term3-unit5": [
+                {"question": "_____ is the daily essential product which is obtained from cattle.", "options": ["a) Egg", "b) Milk", "c) Both of them", "d) None of them"], "correct": "b) Milk", "explanation": "Milk is a daily essential product obtained from cattle."},
+                {"question": "Eggs are rich in", "options": ["a) Protein", "b) Carbohydrate", "c) Fat", "d) Acid"], "correct": "a) Protein", "explanation": "Eggs are a rich source of protein."},
+                {"question": "Which parts of the goat and sheep is used for manufacturing clothes.", "options": ["a) Leg", "b) Hand", "c) Hair", "d) Head"], "correct": "c) Hair", "explanation": "The hair (wool) of goats and sheep is used in the manufacture of clothing."},
+                {"question": "The cultivation and production of silk is known as", "options": ["a) Horticulture", "b) Floriculture", "c) Agriculture", "d) Sericulture"], "correct": "d) Sericulture", "explanation": "Sericulture is the cultivation of silkworms to produce silk."},
+                {"question": "Sorter’s Disease is otherwise known as", "options": ["a) Asthma", "b) Anthrax", "c) Typhoid", "d) Cholera"], "correct": "b) Anthrax", "explanation": "Sorter’s Disease refers to Anthrax, which can be contracted through handling wool and animal products."}
+            ],
+            "Term3-unit6": [
+                {"question": "The Keyboard shortcut used to copy the selected text is", "options": ["a) Ctrl+c", "b) Ctrl+v", "c) Ctrl+x", "d) Ctrl+A"], "correct": "a) Ctrl+c", "explanation": "Ctrl+c is the shortcut key for copying text."},
+                {"question": "The Keyboard shortcut used to cut the selected text is", "options": ["a) Ctrl+c", "b) Ctrl+v", "c) Ctrl+x", "d) Ctrl+A"], "correct": "c) Ctrl+x", "explanation": "Ctrl+x is the shortcut key for cutting text."},
+                {"question": "How many types of page orientation are there in LibreOffice Writer?", "options": ["a) 1", "b) 2", "c) 3", "d) 4"], "correct": "b) 2", "explanation": "LibreOffice Writer supports two types of page orientations: Portrait and Landscape."},
+                {"question": "If the ruler is not displayed on the screen, which option is clicked?", "options": ["a) View-> ruler", "b) view-> task", "c) file-> save", "d) edit->paste"], "correct": "a) View-> ruler", "explanation": "To display the ruler in LibreOffice Writer, you would click 'View-> Ruler'."},
+                {"question": "The menu used to save the document is", "options": ["a) File-> open", "b) file-> print", "c) file-> save", "d) file-> close"], "correct": "c) file-> save", "explanation": "To save a document in LibreOffice Writer, you use the 'File-> Save' menu option."}
+            ]
+        };
 
-          let score = 0;
-          const resultsContainer = document.getElementById('result');
-          resultsContainer.innerHTML = ''; // Clear previous results
+            document.querySelectorAll('#sidebar a').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const unit = this.dataset.unit;
+                const questions = quizData[unit];
+                document.getElementById('content-heading').textContent = this.textContent;
+                let quizHtml = '';
+                questions.forEach((q, index) => {
+                    quizHtml += `<div class="question" id="question${index}"><p><b>Question ${index + 1}: ${q.question}</b></p>`;
+                    q.options.forEach(option => {
+                        quizHtml += `<label><input type="radio" name="question${index}" value="${option}"> ${option}</label>`;
+                    });
+                    quizHtml += `</div>`;
+                });
+                quizHtml += '<button id="submit-quiz" class="btn btn-primary" style="margin-right: 10px;">Submit Quiz</button>';
+                quizHtml += '<button id="reset-quiz" class="btn btn-secondary" style="display: none; margin-left: 10px;">Reset Quiz</button>'; // Reset button is hidden initially
+                document.getElementById('quiz-container').innerHTML = quizHtml;
+                document.getElementById('submit-quiz').addEventListener('click', () => submitQuiz(questions, unit));
+                document.getElementById('reset-quiz').addEventListener('click', resetQuiz); // Bind the resetQuiz function
+            });
+        });
 
-          // Define correct answers and explanations for each question
-          const answerKey = {
-              question1: { correct: 'D', explanation: 'A measuring tape is flexible and can be extended vertically to measure the height of a tree, making it more suitable than the other options listed.' },
-              question2: { correct: 'C', explanation: 'There are 100 centimeters in a meter, so 7 meters equals 700 centimeters (7 m × 100 cm/m = 700 cm).' },
-              question3: { correct: 'A', explanation: 'A physical quantity is a property of a material or system that can be quantified by measurement.' },
-              question4: { correct: 'C', explanation: 'This is the correct order of length units from largest to smallest. 1 kilometer (km) is larger than 1 meter (m), which is larger than 1 centimeter (cm), which in turn is larger than 1 millimeter (mm).' },
-              question5: { correct: 'B', explanation: 'This position minimizes parallax error, ensuring the measurement is as accurate as possible.' }
-          };
+        function submitQuiz(questions, unit) {
+            const resultsContainer = document.getElementById('results-container');
+            resultsContainer.innerHTML = ''; // Clear previous results
+            let score = 0;
+            questions.forEach((q, index) => {
+                const questionElement = document.getElementById(`question${index}`);
+                const selectedOption = questionElement.querySelector('input[type="radio"]:checked');
+                const correct = q.correct;
+                const userAnswer = selectedOption ? selectedOption.value : null;
+                const feedbackElement = document.createElement('div');
+                feedbackElement.className = userAnswer === correct ? 'feedback-correct' : 'feedback-incorrect';
 
-          // Check answers and provide feedback
-          document.querySelectorAll('form').forEach((form, index) => {
-              const questionId = `question${index + 1}`;
-              const correctAnswer = answerKey[questionId].correct;
-              const explanation = answerKey[questionId].explanation;
-              const userAnswer = form.querySelector('input[type="radio"]:checked')?.value;
-              const feedbackElement = document.createElement('div');
-              feedbackElement.className = userAnswer === correctAnswer ? 'feedback-correct' : 'feedback-incorrect';
+                let feedbackHtml = userAnswer === correct ?
+                    `<p class="correct">Correct!</p>` :
+                    `<p class="incorrect">${userAnswer ? 'Incorrect!' : 'You did not answer this question.'}</p>`;
 
-              let feedbackHtml = userAnswer === correctAnswer ?
-                  `<p class="correct">Correct!</p>` :
-                  `<p class="incorrect">${userAnswer ? 'Incorrect!' : 'You did not answer this question.'}</p>`;
+                feedbackHtml += `<p style="color: black; font-weight: bold;">Correct answer: ${correct}.${userAnswer ? ` Your answer: ${userAnswer}.` : ''}</p>`;
+                feedbackHtml += `<p style="color: black; font-weight: bold;">Explanation:</p><p style="color: black;">${q.explanation}</p>`;
+                feedbackElement.innerHTML = feedbackHtml;
 
-              feedbackHtml += `<p style="color: black; font-weight: bold;">Correct answer: ${correctAnswer}.${userAnswer ? ` Your answer: ${userAnswer}.` : ''}</p>`;
-              feedbackHtml += `<p style="color: black; font-weight: bold;">Explanation:</p><p style="color: black;">${explanation}</p>`;
-              feedbackElement.innerHTML = feedbackHtml;
+                questionElement.appendChild(feedbackElement);
 
-              if (userAnswer === correctAnswer) {
-                  score++;
-              }
+                if (userAnswer === correct) {
+                    score++;
+                }
 
-              form.parentNode.appendChild(feedbackElement);
-          });
+                // Disable the option after answering
+                const options = questionElement.querySelectorAll('input[type="radio"]');
+                options.forEach(option => {
+                    option.disabled = true;
+                });
+            });
 
-          // Display the score centrally below the 'Submit Quiz' button
-          resultsContainer.innerHTML = `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${Object.keys(answerKey).length}</p></div>`;
+            // Disable the submit button
+            document.getElementById('submit-quiz').disabled = true;
 
-          // If needed, also display the score right below the quiz heading, centered
-          const quizHeading = document.querySelector('.section-title');
-          if (quizHeading) {
-              quizHeading.insertAdjacentHTML('afterend', `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${Object.keys(answerKey).length}</p></div>`);
-          }
-      });
+            // Show the reset button
+            document.getElementById('reset-quiz').style.display = 'inline-block';
+
+            resultsContainer.innerHTML = `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${questions.length}</p></div>`;
+        }
+
+        function resetQuiz() {
+            // Clear results and feedback
+            document.getElementById('results-container').innerHTML = '';
+            document.querySelectorAll('.feedback-correct, .feedback-incorrect').forEach(element => {
+                element.remove();
+            });
+
+            // Enable all radio buttons and clear selections
+            const radioButtons = document.querySelectorAll('.question input[type="radio"]');
+            radioButtons.forEach(button => {
+                button.disabled = false;
+                button.checked = false;
+            });
+
+            // Hide the reset button and show the submit button
+            document.getElementById('reset-quiz').style.display = 'none';
+            document.getElementById('submit-quiz').disabled = false;
+        }
+
+        document.querySelector('#sidebar a[data-unit="#"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Clear the quiz container and display the default message
+            document.getElementById('content-heading').textContent = 'Please select a unit under Term';
+            document.getElementById('quiz-container').innerHTML = '';
+            document.getElementById('submit-area').innerHTML = '';
+            document.getElementById('results-container').innerHTML = '';
+            // Hide any existing reset button
+            const resetButton = document.getElementById('reset-quiz');
+            if (resetButton) {
+                resetButton.style.display = 'none';
+            }
+        });
+
     </script>
-  </body>
+</body>
 </html>
