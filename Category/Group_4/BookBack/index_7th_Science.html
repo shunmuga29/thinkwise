@@ -276,9 +276,15 @@
 
             document.querySelectorAll('#sidebar a').forEach(item => {
             item.addEventListener('click', function(e) {
-                e.preventDefault();
-                const unit = this.dataset.unit;
-                const questions = quizData[unit];
+                // Check if the link should act normally (no data-unit or certain condition)
+                if (!this.dataset.unit) {
+                    return; // Allow default behavior
+                }
+
+                e.preventDefault(); // Prevent default only for links with data-unit
+                const questions = quizData[this.dataset.unit];
+
+                // Update content-heading and populate quiz questions
                 document.getElementById('content-heading').textContent = this.textContent;
                 let quizHtml = '';
                 questions.forEach((q, index) => {
@@ -289,41 +295,15 @@
                     quizHtml += `</div>`;
                 });
                 quizHtml += '<button id="submit-quiz" class="btn btn-primary" style="margin-right: 10px;">Submit Quiz</button>';
-                quizHtml += '<button id="reset-quiz" class="btn btn-secondary" style="display: none; margin-left: 10px;">Reset Quiz</button>'; // Reset button is hidden initially
+                quizHtml += '<button id="reset-quiz" class="btn btn-secondary" style="display: none; margin-left: 10px;">Reset Quiz</button>';
                 document.getElementById('quiz-container').innerHTML = quizHtml;
-                document.getElementById('results-container').innerHTML = ''; // Clear results container when loading new quiz
-                document.getElementById('submit-quiz').disabled = false; // Enable submit button
-                document.getElementById('submit-quiz').addEventListener('click', () => submitQuiz(questions, unit));
-                document.getElementById('reset-quiz').addEventListener('click', resetQuiz); // Bind the resetQuiz function
-                // Scroll to top of the quiz container
+                document.getElementById('results-container').innerHTML = '';
+                document.getElementById('submit-quiz').disabled = false;
+                document.getElementById('submit-quiz').addEventListener('click', () => submitQuiz(questions, this.dataset.unit));
+                document.getElementById('reset-quiz').addEventListener('click', resetQuiz);
                 document.getElementById('content-heading').scrollIntoView();
             });
         });
-
-        //     document.querySelectorAll('#sidebar a').forEach(item => {
-        //     item.addEventListener('click', function(e) {
-        //         e.preventDefault();
-        //         const unit = this.dataset.unit;
-        //         const questions = quizData[unit];
-        //         document.getElementById('content-heading').textContent = this.textContent;
-        //         let quizHtml = '';
-        //         questions.forEach((q, index) => {
-        //             quizHtml += `<div class="question" id="question${index}"><p><b>Question ${index + 1}: ${q.question}</b></p>`;
-        //             q.options.forEach(option => {
-        //                 quizHtml += `<label><input type="radio" name="question${index}" value="${option}"> ${option}</label>`;
-        //             });
-        //             quizHtml += `</div>`;
-        //         });
-        //         quizHtml += '<button id="submit-quiz" class="btn btn-primary" style="margin-right: 10px;">Submit Quiz</button>';
-        //         quizHtml += '<button id="reset-quiz" class="btn btn-secondary" style="display: none; margin-left: 10px;">Reset Quiz</button>'; // Reset button is hidden initially
-        //         document.getElementById('quiz-container').innerHTML = quizHtml;
-        //         document.getElementById('submit-quiz').addEventListener('click', () => submitQuiz(questions, unit));
-        //         document.getElementById('reset-quiz').addEventListener('click', resetQuiz); // Bind the resetQuiz function
-        //         // Scroll to top of the quiz container
-        //         document.getElementById('content-heading').scrollIntoView();
-        //     });
-        // });
-
 
         function submitQuiz(questions, unit) {
             const resultsContainer = document.getElementById('results-container');
