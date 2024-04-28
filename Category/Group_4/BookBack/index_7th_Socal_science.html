@@ -1,285 +1,293 @@
 <!doctype html>
 <html lang="en">
-  
-  <head>
-  	<title>Thinkswise - Standard 6</title>
+<head>
+    <title>Thinkswise - Standard 7 Social-Science</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/style.css">
-    
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-      .question-text {
-          margin-bottom: 10px; /* This adds space below the question text */
-      }
-  
-      .question label {
-      color: black; /* Sets the text color to black */
-      }
-  
-      .question {
-          display: block;
-          padding-left: 30px; /* This keeps the options aligned with the question text */
-          margin-top: 10px; /* This adds space above the options */
-      }
-  
-      .horizontal-options label {
-      margin-right: 15px; /* Space between options */
-      /* No 'display: block;' needed since it's horizontal by default */
-      }
-  
-  
-      .vertical-options label {
-      display: block; /* This will stack the labels vertically */
-      margin-right: 0; /* Reset any horizontal margin if necessary */
-      margin-bottom: 5px; /* Add some space between the options */
-      }
-  
-      .correct {
-      color: green;
-      font-weight: bold;
-      }
-  
-      .incorrect {
-          color: red;
-          font-weight: bold;
-      }
-  
-      .feedback-correct {
-      background-color: #e6f7ff; /* Light blue background for correct answers */
-      border: 1px solid #b3d8ff; /* Optional: border for the box */
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      }
-  
-      .feedback-incorrect {
-      background-color: #ffdddd; /* Even lighter red background for incorrect/unanswered */
-      border: 1px solid #ffcccc; /* Light red border, adjust as needed */
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      }
+        .question-text {
+            margin-bottom: 10px;
+        }
+        .question label {
+            color: #0f1624;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question p {
+            color: #0f1624; 
+        }
+        
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+        .feedback-correct {
+            background-color: #e6f7ff;
+            border: 1px solid #b3d8ff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .feedback-incorrect {
+            background-color: #ffdddd;
+            border: 1px solid #ffcccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #submit-quiz {
+            margin-right: 10px; /* Adjust the space to your liking */
+        }
 
-      </style>  
-    </head>
-    <body>
-		
-		<div class="wrapper d-flex align-items-stretch">
-      <nav id="sidebar">
-        <h1><a href="../../../index.html" class="logo">Thinkwise.in</a></h1>
-        <ul class="list-unstyled components mb-5">
-            <li class="active">
-                <a href="../../../index.html"><span class="fa fa-home mr-3"></span> Home</a>
-            </li>
-            <li>
-                <a > STANDARD 6 SCIENCE BOOK BACK</a>
-                <ul class="list-unstyled">
-                </ul>
-            </li>
-            <li>
-                <a href="#term1" ><span class="fa fa-sticky-note mr-3"></span> Term 1</a>
-                <ul class="list-unstyled">
-                    <li><a href="Terms/Term1/Term1Unit1.html">Unit 1 - The World of Plants [Biology]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit2.html">Unit 2 - Food Habit [Biology]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit3.html">Unit 3 - Changes around us [Chemistry]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit4.html">Unit 4 - Measurement and Motion [Physics]</a></li>
-                    <li><a href="Terms/Term1/Term1Unit5.html">Unit 5 - Magnetism [Physics]</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#" ><span class="fa fa-sticky-note mr-3"></span> Term 2</a>
-                <ul class="list-unstyled">
-                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 1 - Cell Structure [Biology]</a></li>
-                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 2 - Separation of Subtances [Chemistry]</a></li>
-                    <li><a href="Terms/Term2/Term2Unit1.html">Unit 3 - Types of Energy [Physics]</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#term3" ><span class="fa fa-sticky-note mr-3"></span> Term 3</a>
-                <ul class="list-unstyled">
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 1 - Diversity of Organisms [Biology]</a></li>
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 2 - Our Environment [Biology]</a></li>
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 3 - Chemistry in Daily Life [Chemistry]</a></li>
-                    <li><a href="Terms/Term3/Term3Unit1.html">Unit 4 - Light [Physics]</a></li>
-                </ul>
-            </li>
-        </ul>
-      </nav>
-        <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4"><b>Standard 6 - Term 1 <br>UNIT 1 - The World of Plants</b></h2>
-        <!-- News With Sidebar Start -->
-        <div class="container-fluid pt-4 mb-3">
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-13">
-                            <!-- Question 1: Plants with medicinal value are called -->
-                            <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 1: Plants with medicinal value are called</b></p>
-                                        <form id="quiz-form-q1">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question1" value="A"> pulses</label>
-                                                <label><input type="radio" name="question1" value="B"> scented plants</label>
-                                                <label><input type="radio" name="question1" value="C"> medicinal plants</label>
-                                                <label><input type="radio" name="question1" value="D"> barks</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        #reset-quiz {
+            margin-left: 10px; /* Adjust the space to your liking */
+        }
 
-                        <!-- Question 2: Of the following, which is the seed part of the plant used as food? -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 2: Of the following, which is the seed part of the plant used as food?</b></p>
-                                        <form id="quiz-form-q2">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question2" value="A"> thoor dhal</label>
-                                                <label><input type="radio" name="question2" value="B"> veldt grape</label>
-                                                <label><input type="radio" name="question2" value="C"> banana</label>
-                                                <label><input type="radio" name="question2" value="D"> turmeric</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        #sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 250px; /* Width of the sidebar */
+            overflow-y: auto; /* Allows scrolling within the sidebar */
+            height: 100vh; /* Full height of the viewport */
+        }
 
-                        <!-- Question 3: Select the food-related industry from the following -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 3: Select the food-related industry from the following</b></p>
-                                        <form id="quiz-form-q3">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question3" value="A"> coir making</label>
-                                                <label><input type="radio" name="question3" value="B"> gardening</label>
-                                                <label><input type="radio" name="question3" value="C"> cotton cultivation</label>
-                                                <label><input type="radio" name="question3" value="D"> pickle-making</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        #content {
+            margin-left: 450px; /* Adjust this based on the actual width of your sidebar */
+        }
 
-                        <!-- Question 4: Name the unripe fruit that we have to be consumed for blood purification. -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 4: Name the unripe fruit that we have to be consumed for blood purification.</b></p>
-                                        <form id="quiz-form-q4">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question4" value="A"> gooseberry</label>
-                                                <label><input type="radio" name="question4" value="B"> neem</label>
-                                                <label><input type="radio" name="question4" value="C"> veldt grape</label>
-                                                <label><input type="radio" name="question4" value="D"> carry me seed</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        /* Style the scrollbar for webkit browsers */
+        ::-webkit-scrollbar {
+        width: 8px; /* You can adjust the width here to make the scrollbar thinner */
+        }
 
-                        <!-- Question 5: Name the tree used in paper industry. -->
-                        <div class="col-lg-12">
-                            <div class="position-relative mb-3">
-                                <div class="bg-white border border-top-0 p-1">
-                                    <div class="mb-2" style="display: block;">
-                                        <p class="question-text" style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Question 5: Name the tree used in paper industry.</b></p>
-                                        <form id="quiz-form-q5">
-                                            <div class="question horizontal-options">
-                                                <label><input type="radio" name="question5" value="A"> Teak</label>
-                                                <label><input type="radio" name="question5" value="B"> Eucalyptus</label>
-                                                <label><input type="radio" name="question5" value="C"> Coconut tree</label>
-                                                <label><input type="radio" name="question5" value="D"> Sandalwood tree</label>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 10px;
+        }
 
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!-- News With Sidebar End -->
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+        }
 
-      <!-- Submit Button (placed inside the main content container) -->
-      <div class="col-lg-12 text-center">
-          <button id="submit-quiz" class="btn btn-primary"><b>Submit Quiz</b></button>
-      </div>
+        /* Firefox */
+        * {
+        scrollbar-width: thin;
+        scrollbar-color: #888 #ffffff;
+        }
 
-      <div id="result" class="col-lg-12"></div>
-      </div>
-		</div>
-  
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <h1><a href="../../../index.html" class="logo">Thinkwise.in</a></h1>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="../../../index.html"><span class="fa fa-home mr-3"></span> Home</a>
+                </li>
+                <li><a href="#" data-unit="#">STANDARD 7 SOCIAL-SCIENCE BOOK BACK</a></li>
+                <!--Standard 7 - Term 1 -->
+                <li><a href="#" data-unit="#">TERM 1</a></li>
+                <li><a href="#Term1-unit1" data-unit="Term1-unit1">Unit 1 - Sources of Medieval India</a></li>
+                <li><a href="#Term1-unit2" data-unit="Term1-unit2">Unit 2 - Emergence of New Kingdoms in North India</a></li>
+                <li><a href="#Term1-unit3" data-unit="Term1-unit3">Unit 3 - Emergence of New Kingdoms in South India:Later Cholas and Pandyas</a></li>
+                <li><a href="#Term1-unit4" data-unit="Term1-unit4">Unit 4 - The Delhi Sultanate</a></li>
+                <li><a href="#Term1-unit5" data-unit="Term1-unit5">Unit 5 - Interior of the Earth</a></li>
+                <li><a href="#Term1-unit6" data-unit="Term1-unit6">Unit 6 - Landforms</a></li>
+                <li><a href="#Term1-unit7" data-unit="Term1-unit7">Unit 7 - Population and Settlement</a></li>
+                <li><a href="#Term1-unit7" data-unit="Term1-unit7">Unit 8 - Equality</a></li>
+                <li><a href="#Term1-unit7" data-unit="Term1-unit7">Unit 9 - Political Parties</a></li>
+                <li><a href="#Term1-unit7" data-unit="Term1-unit7">Unit 10 - Production</a></li>
+                <!--Standard 7 - Term 2 -->
+                <li><a href="#" data-unit="#">TERM 2</a></li>
+                <li><a href="#Term2-unit1" data-unit="Term2-unit1">ADD HERE</a></li>
+                <!--Standard 7 - Term 3 -->
+                <li><a href="#" data-unit="#">TERM 3</a></li>
+                <li><a href="#Term3-unit1" data-unit="Term3-unit1">ADD HERE</a></li>
+            </ul>
+        </nav>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <h2 class="mb-4" id="content-heading">Please select a unit</h2>
+            <div id="quiz-container"></div>
+            <div id="submit-area"></div>
+            <div id="results-container"></div>
+        </div>
+    </div>
+
     <script>
-      document.getElementById('submit-quiz').addEventListener('click', function() {
-          // Disable the submit button to prevent multiple submissions
-          this.disabled = true;
+        const quizData = {
+            "Term1-unit1": [
+                {"question": "__________ are the writings engraved on solid surfaces such as rocks, stones, temple walls and metals.", "options": ["a) Chronicles", "b) Travelogues", "c) Coins", "d) Inscriptions"], "correct": "d) Inscriptions", "explanation": "Inscriptions are writings carved into hard surfaces like rocks and metals."},
+                {"question": "___________ was the land gifted to temples.", "options": ["a) Vellanvagai", "b) Shalabhoga", "c) Brahmadeya", "d) Devadana"], "correct": "c) Brahmadeya", "explanation": "Brahmadeya refers to land donated to Brahmins, which often was associated with temples."},
+                {"question": "___________period was known as the period of devotional literature.", "options": ["a) Chola", "b) Pandya", "c) Rajput", "d) Vijayanagara"], "correct": "a) Chola", "explanation": "The Chola period is renowned for its surge in devotional literature, particularly in South India."},
+                {"question": "_________ provides information about the first Sultan of Delhi.", "options": ["a) Ain-i-Akbari", "b) Taj-ul-Ma’asir", "c) Tuzk-i-Jahangiri", "d) Tarikh-i-Frishta"], "correct": "b) Taj-ul-Ma’asir", "explanation": "Taj-ul-Ma’asir provides historical details about the first Sultan of Delhi."},
+                {"question": "___________ , an Arab-born Morocco scholar, travelled from Morocco to India.", "options": ["a) Marco Polo", "b) Al Beruni", "c) Domingo Paes", "d) Ibn Battuta"], "correct": "d) Ibn Battuta", "explanation": "Ibn Battuta, the Morocco-born scholar, is known for his extensive travels, including to India."}],
+            "Term1-unit2": [
+                {"question": "Who wrote Prithivirajraso?", "options": ["a) Kalhana", "b) Vishakadatta", "c) Rajasekara", "d) Chand Bardai"], "correct": "d) Chand Bardai", "explanation": "Chand Bardai wrote Prithivirajraso, an epic poem about the life of Prithviraj Chauhan."},
+                {"question": "Who was the first prominent ruler of Pratiharas?", "options": ["a) Bhoja I", "b) Naga Bhatta I", "c) Jayapala", "d) Chandradeva"], "correct": "b) Naga Bhatta I", "explanation": "Naga Bhatta I was the first prominent ruler of the Pratihara dynasty."},
+                {"question": "Ghazni was a small principality in _______", "options": ["a) Mongolia", "b) Turkey", "c) Persia", "d) Afghanistan"], "correct": "d) Afghanistan", "explanation": "Ghazni is located in present-day Afghanistan."},
+                {"question": "What was the most important cause of the invasion of Mahmud of Ghazni?", "options": ["a) To destroy idolatry", "b) To plunder the wealth of India", "c) To spread Islam in India", "d) To establish a Muslim state in India"], "correct": "b) To plunder the wealth of India", "explanation": "The primary motive for Mahmud of Ghazni's invasions was to plunder the wealth of the Indian subcontinent."}],
+            "Term1-unit3": [
+                {"question": "Who revived the later Chola dynasty?", "options": ["a) Vijayalaya", "b) Rajaraja I", "c) Rajendra I", "d) Athirajendra"], "correct": "a) Vijayalaya", "explanation": "Vijayalaya was the founder of the Later Chola dynasty."},
+                {"question": "Who among the following Pandya rulers is known for ending the Kalabhra rule?", "options": ["a) Kadunkon", "b) ViraPandyan", "c) Kun Pandyan", "d) Varaguna"], "correct": "b) ViraPandyan", "explanation": "ViraPandyan is credited with ending the Kalabhra rule in the region."},
+                {"question": "Which of the following was the lowest unit of Chola administration?", "options": ["a) Mandalam", "b) Nadu", "c) Kurram", "d) Ur"], "correct": "d) Ur", "explanation": "Ur was considered the lowest unit in the administrative hierarchy of the Chola dynasty."},
+                {"question": "Who was the last ruler of the Vijayalaya line of Chola dynasty?", "options": ["a) VeeraRajendra", "b) Rajadhiraja", "c) AthiRajendra", "d) Rajaraja II"], "correct": "c) AthiRajendra", "explanation": "AthiRajendra was the last ruler of the Vijayalaya line of the Chola dynasty."},
+                {"question": "An example of Chola architecture can be seen at.", "options": ["a) Kannayiram", "b) Uraiyur", "c) Kanchipuram", "d) Thanjavur"], "correct": "d) Thanjavur", "explanation": "The Brihadisvara Temple at Thanjavur is a prime example of Chola architecture."}],
+            "Term1-unit4": [
+                {"question": "__________laid the foundation of ‘Mamluk’ dynasty.", "options": ["a) Mohammad Ghori", "b) Jalal-ud-din", "c) Qutb-ud-din Aibak", "d) Iltutmish"], "correct": "c) Qutb-ud-din Aibak", "explanation": "Qutb-ud-din Aibak founded the Mamluk dynasty in India."},
+                {"question": "Qutb-ud-in shifted his capital to Delhi from_____________.", "options": ["a) Lahore", "b) Poona", "c) Daulatabad", "d) Agra"], "correct": "a) Lahore", "explanation": "Qutb-ud-din Aibak shifted his capital from Lahore to Delhi, establishing the Delhi Sultanate."},
+                {"question": "____________ completed the construction of the Qutb-Minar.", "options": ["a) Razia", "b) Qutb-ud-din -Aibak", "c) Iltutmish", "d) Balban"], "correct": "c) Iltutmish", "explanation": "Iltutmish completed the construction of Qutb-Minar, which was started by Qutb-ud-din Aibak."},
+                {"question": "___________laid the foundation of the city Tughluqabad near Delhi.", "options": ["a) Muhammad-bin -Tughluq", "b) Firoz shah Tughluq", "c) Jalal –ud-din", "d) Ghiyas –ud-din"], "correct": "d) Ghiyas –ud-din", "explanation": "Ghiyas-ud-din Tughluq laid the foundation of the city of Tughluqabad near Delhi."}],
+            "Term1-unit5": [
+                {"question": "Nife is made up of ___________ .", "options": ["a) Nickel and ferrous", "b) Silica and aluminum", "c) Silica and magnesium", "d) Iron and magnesium"], "correct": "a) Nickel and ferrous", "explanation": "Nife stands for Nickel and Iron which make up the Earth's core."},
+                {"question": "Earthquake and volcanic eruption occur near the edges of ______________.", "options": ["a) Mountain", "b) Plains", "c) Plates", "d) Plateaus"], "correct": "c) Plates", "explanation": "Earthquakes and volcanic eruptions typically occur near the edges of tectonic plates."},
+                {"question": "The magnitude of an earthquake is measured by ______________.", "options": ["a) Seismograph", "b) Richter scale", "c) Ammeter", "d) Rotameter"], "correct": "b) Richter scale", "explanation": "The Richter scale measures the magnitude of earthquakes."},
+                {"question": "The narrow pipe through which magma flows out is called a ______________.", "options": ["a) Vent", "b) Crater", "c) Focus", "d) Caldera"], "correct": "a) Vent", "explanation": "A vent is a narrow opening through which magma flows out during a volcanic eruption."},
+                {"question": "___________ Volcano is known as light house of Mediterranean Sea.", "options": ["a) Stromboli", "b) Krakatoa", "c) Fujiyama", "d) Kilimanjaro"], "correct": "a) Stromboli", "explanation": "Stromboli volcano is famously referred to as the 'Lighthouse of the Mediterranean' due to its almost continuous volcanic activity."},
+                {"question": "__________ belt is known as the 'Ring of Fire'.", "options": ["a) Circum - Pacific", "b) Mid-Atlantic", "c) Mid - Continental", "d) Antarctic"], "correct": "a) Circum - Pacific", "explanation": "The 'Ring of Fire' is a major area in the basin of the Pacific Ocean where a large number of earthquakes and volcanic eruptions occur."}],
+            "Term1-unit6": [
+                {"question": "____________ is a deposition of river sediments along the foot-hills.", "options": ["a) Plunge pool", "b) Alluvial fan", "c) Flood plain", "d) Delta"], "correct": "b) Alluvial fan", "explanation": "An alluvial fan is a fan-shaped deposit of sediment, especially at the base of mountain ranges where a river slows as it exits a steep valley."},
+                {"question": "Courtallam falls is located across the____________ river.", "options": ["a) Cauvery", "b) Pennar", "c) Chittar", "d) Vaigai"], "correct": "c) Chittar", "explanation": "Courtallam Falls, also known as Kutralam Falls, is located on the Chittar River in Tamil Nadu, India."},
+                {"question": "The landform created by glacial deposition is", "options": ["a) Cirque", "b) Arete", "c) Moraine", "d) Tarn lake"], "correct": "c) Moraine", "explanation": "Moraines are accumulations of dirt and rocks that have fallen onto the glacier surface or have been pushed along by the glacier as it moves."},
+                {"question": "Large deposits of loess are found in", "options": ["a) USA", "b) India", "c) China", "d) Brazil"], "correct": "c) China", "explanation": "China is known for its extensive loess plateaus, which are some of the largest in the world."},
+                {"question": "Land forms which are not associated with wave erosion ____________", "options": ["a) Cliffs", "b) Sea arches", "c) Stacks", "d) Beaches"], "correct": "d) Beaches", "explanation": "Beaches are typically formed through processes of deposition rather than erosion."}],
+            "Term1-unit7": [
+                {"question": "Caucasoid race is also known as __________ race", "options": ["a) European", "b) Negroid", "c) Mongoloid", "d) Australoid"], "correct": "a) European", "explanation": "The Caucasoid race is often referred to as the European race due to its predominant distribution in European regions."},
+                {"question": "__________ Race is Known as Asian - American Race", "options": ["a) Caucasoid", "b) Negroid", "c) Mongoloid", "d) Australoid"], "correct": "c) Mongoloid", "explanation": "The Mongoloid race is sometimes referred to as the Asian-American race, reflecting its distribution across parts of Asia and the Americas."},
+                {"question": "World population day __________", "options": ["a) September 1", "b) June 11", "c) July 11", "d) December 2"], "correct": "c) July 11", "explanation": "World Population Day is observed on July 11 each year to raise awareness of global population issues."},
+                {"question": "Rural settlements are located near ___________", "options": ["a) Water bodies", "b) Hilly areas", "c) Coastal areas", "d) Desert areas"], "correct": "a) Water bodies", "explanation": "Rural settlements are typically located near water bodies due to the necessity of water for agricultural and daily life uses."},
+                {"question": "Arrange the following in terms of size 1) City 2) Megalopolis 3) Metropolis 4) Conurbation", "options": ["a) 4,1,3,2", "b) 1,3,4,2", "c) 2,1,3,4", "d) 3,1,2,4"], "correct": "b) 1,3,4,2", "explanation": "In terms of size, the order is: City, Metropolis, Conurbation, Megalopolis."}],
+            "Term1-unit8": [
+                {"question": "Which one of the following does not come under Equality?", "options": ["a) Non discrimination on the basis of birth, caste, religion, race, colour, gender", "b) Right to contest in the election", "c) All are treated equal in the eyes of law", "d) Showing inequality between rich and poor"], "correct": "d) Showing inequality between rich and poor", "explanation": "Equality involves treating everyone the same way, which contradicts showing inequality between rich and poor."},
+                {"question": "Which one of the following comes under political Equality?", "options": ["a) Right to petition the government and criticize public policy", "b) Removal of inequality based on race, colour, sex, and caste", "c) All are equal before the law", "d) Prevention of concentration of wealth in the hands of few"], "correct": "c) All are equal before the law", "explanation": "Political equality primarily ensures that all are equal before the law."},
+                {"question": "In India, right to vote is given to all the citizens at the age of ____________", "options": ["a) 21", "b) 18", "c) 25", "d) 31"], "correct": "b) 18", "explanation": "In India, the legal voting age is 18."},
+                {"question": "Inequality created by man on the basis of caste, money, religion etc is called as____", "options": ["a) Natural inequality", "b) Manmade inequality", "c) Economic inequality", "d) Gender inequality"], "correct": "b) Manmade inequality", "explanation": "Inequality based on social factors like caste, money, and religion is termed as manmade inequality."},
+                {"question": "In Switzerland, the right to vote is given to women in the year", "options": ["a) 1981", "b) 1971", "c) 1991", "d) 1961"], "correct": "b) 1971", "explanation": "Swiss women gained the right to vote in 1971."}],
+            "Term1-unit9": [
+                {"question": "What is meant by Bi-party system?", "options": ["a) Two parties run the government", "b) Two members run a party", "c) Two major political parties contest election", "d) None of these"], "correct": "c) Two major political parties contest election", "explanation": "A bi-party system is where two major political parties dominate the elections."},
+                {"question": "Which system of government does India have?", "options": ["a) Single–party system", "b) Bi-party system", "c) Multi-party system", "d) None of these"], "correct": "c) Multi-party system", "explanation": "India operates under a multi-party system, where multiple parties can run for and hold office."},
+                {"question": "Recognition of a political party is accorded by", "options": ["a) The Election Commission", "b) The President", "c) The Supreme Court", "d) A committee"], "correct": "a) The Election Commission", "explanation": "In India, the recognition of political parties is handled by the Election Commission."},
+                {"question": "Political parties are generally formed on the basis of", "options": ["a) Religious principles", "b) Common interest", "c) Economic principles", "d) Caste"], "correct": "b) Common interest", "explanation": "Political parties are typically formed around a shared set of interests and goals."},
+                {"question": "Single-party system is found in", "options": ["a) India", "b) U.S.A", "c) France", "d) China"], "correct": "d) China", "explanation": "China is an example of a country with a single-party system, where the Communist Party is the only political party."}],
+            "Term1-unit10": [
+                {"question": "Production refers to", "options": ["a) destruction of utility", "b) creation of utilities", "c) exchange value", "d) none of these"], "correct": "b) creation of utilities", "explanation": "Production involves the creation of utilities, adding value to goods and services."},
+                {"question": "Utilities are in the nature of", "options": ["a) form utility", "b) time utility", "c) place utility", "d) all of these"], "correct": "d) all of these", "explanation": "Utilities include various forms such as form utility, time utility, and place utility."},
+                {"question": "Primary factors are", "options": ["a) land, capital", "b) capital, labour", "c) land, labour", "d) none of these"], "correct": "c) land, labour", "explanation": "Land and labour are considered primary factors in production."},
+                {"question": "The entrepreneur is also called", "options": ["a) exchanger", "b) agent", "c) organizer", "d) communicator"], "correct": "c) organizer", "explanation": "Entrepreneurs are often called organizers because they combine the other factors of production to create goods and services."}]
+        };
 
-          let score = 0;
-          const resultsContainer = document.getElementById('result');
-          resultsContainer.innerHTML = ''; // Clear previous results
+            document.querySelectorAll('#sidebar a').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const unit = this.dataset.unit;
+                const questions = quizData[unit];
+                document.getElementById('content-heading').textContent = this.textContent;
+                let quizHtml = '';
+                questions.forEach((q, index) => {
+                    quizHtml += `<div class="question" id="question${index}"><p><b>Question ${index + 1}: ${q.question}</b></p>`;
+                    q.options.forEach(option => {
+                        quizHtml += `<label><input type="radio" name="question${index}" value="${option}"> ${option}</label>`;
+                    });
+                    quizHtml += `</div>`;
+                });
+                quizHtml += '<button id="submit-quiz" class="btn btn-primary" style="margin-right: 10px;">Submit Quiz</button>';
+                quizHtml += '<button id="reset-quiz" class="btn btn-secondary" style="display: none; margin-left: 10px;">Reset Quiz</button>'; // Reset button is hidden initially
+                document.getElementById('quiz-container').innerHTML = quizHtml;
+                document.getElementById('results-container').innerHTML = ''; // Clear results container when loading new quiz
+                document.getElementById('submit-quiz').disabled = false; // Enable submit button
+                document.getElementById('submit-quiz').addEventListener('click', () => submitQuiz(questions, unit));
+                document.getElementById('reset-quiz').addEventListener('click', resetQuiz); // Bind the resetQuiz function
+                // Scroll to top of the quiz container
+                document.getElementById('content-heading').scrollIntoView();
+            });
+        });
+        function submitQuiz(questions, unit) {
+            const resultsContainer = document.getElementById('results-container');
+            resultsContainer.innerHTML = ''; // Clear previous results
+            let score = 0;
+            questions.forEach((q, index) => {
+                const questionElement = document.getElementById(`question${index}`);
+                const selectedOption = questionElement.querySelector('input[type="radio"]:checked');
+                const correct = q.correct;
+                const userAnswer = selectedOption ? selectedOption.value : null;
+                const feedbackElement = document.createElement('div');
+                feedbackElement.className = userAnswer === correct ? 'feedback-correct' : 'feedback-incorrect';
 
-          // Define correct answers and explanations for each question
-          const answerKey = {
-              question1: { correct: 'D', explanation: 'A measuring tape is flexible and can be extended vertically to measure the height of a tree, making it more suitable than the other options listed.' },
-              question2: { correct: 'C', explanation: 'There are 100 centimeters in a meter, so 7 meters equals 700 centimeters (7 m × 100 cm/m = 700 cm).' },
-              question3: { correct: 'A', explanation: 'A physical quantity is a property of a material or system that can be quantified by measurement.' },
-              question4: { correct: 'C', explanation: 'This is the correct order of length units from largest to smallest. 1 kilometer (km) is larger than 1 meter (m), which is larger than 1 centimeter (cm), which in turn is larger than 1 millimeter (mm).' },
-              question5: { correct: 'B', explanation: 'This position minimizes parallax error, ensuring the measurement is as accurate as possible.' }
-          };
+                let feedbackHtml = userAnswer === correct ?
+                    `<p class="correct">Correct!</p>` :
+                    `<p class="incorrect">${userAnswer ? 'Incorrect!' : 'You did not answer this question.'}</p>`;
 
-          // Check answers and provide feedback
-          document.querySelectorAll('form').forEach((form, index) => {
-              const questionId = `question${index + 1}`;
-              const correctAnswer = answerKey[questionId].correct;
-              const explanation = answerKey[questionId].explanation;
-              const userAnswer = form.querySelector('input[type="radio"]:checked')?.value;
-              const feedbackElement = document.createElement('div');
-              feedbackElement.className = userAnswer === correctAnswer ? 'feedback-correct' : 'feedback-incorrect';
+                feedbackHtml += `<p style="color: black; font-weight: bold;">Correct answer: ${correct}.${userAnswer ? ` Your answer: ${userAnswer}.` : ''}</p>`;
+                feedbackHtml += `<p style="color: black; font-weight: bold;">Explanation:</p><p style="color: black;">${q.explanation}</p>`;
+                feedbackElement.innerHTML = feedbackHtml;
 
-              let feedbackHtml = userAnswer === correctAnswer ?
-                  `<p class="correct">Correct!</p>` :
-                  `<p class="incorrect">${userAnswer ? 'Incorrect!' : 'You did not answer this question.'}</p>`;
+                questionElement.appendChild(feedbackElement);
 
-              feedbackHtml += `<p style="color: black; font-weight: bold;">Correct answer: ${correctAnswer}.${userAnswer ? ` Your answer: ${userAnswer}.` : ''}</p>`;
-              feedbackHtml += `<p style="color: black; font-weight: bold;">Explanation:</p><p style="color: black;">${explanation}</p>`;
-              feedbackElement.innerHTML = feedbackHtml;
+                if (userAnswer === correct) {
+                    score++;
+                }
 
-              if (userAnswer === correctAnswer) {
-                  score++;
-              }
+                // Disable the option after answering
+                const options = questionElement.querySelectorAll('input[type="radio"]');
+                options.forEach(option => {
+                    option.disabled = true;
+                });
+            });
 
-              form.parentNode.appendChild(feedbackElement);
-          });
+            // Disable the submit button
+            document.getElementById('submit-quiz').disabled = true;
 
-          // Display the score centrally below the 'Submit Quiz' button
-          resultsContainer.innerHTML = `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${Object.keys(answerKey).length}</p></div>`;
+            // Show the reset button
+            document.getElementById('reset-quiz').style.display = 'inline-block';
 
-          // If needed, also display the score right below the quiz heading, centered
-          const quizHeading = document.querySelector('.section-title');
-          if (quizHeading) {
-              quizHeading.insertAdjacentHTML('afterend', `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${Object.keys(answerKey).length}</p></div>`);
-          }
-      });
+            resultsContainer.innerHTML = `<div style="text-align: center;"><p style="color: green; font-weight: bold;">Your score: ${score} out of ${questions.length}</p></div>`;
+        }
+
+        function resetQuiz() {
+            // Clear results and feedback
+            document.getElementById('results-container').innerHTML = '';
+            document.querySelectorAll('.feedback-correct, .feedback-incorrect').forEach(element => {
+                element.remove();
+            });
+
+            // Enable all radio buttons and clear selections
+            const radioButtons = document.querySelectorAll('.question input[type="radio"]');
+            radioButtons.forEach(button => {
+                button.disabled = false;
+                button.checked = false;
+            });
+
+            // Hide the reset button and show the submit button
+            document.getElementById('reset-quiz').style.display = 'none';
+            document.getElementById('submit-quiz').disabled = false;
+        }
+
+        document.querySelector('#sidebar a[data-unit="#"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Clear the quiz container and display the default message
+            document.getElementById('content-heading').textContent = 'Please select a unit under Term';
+            document.getElementById('quiz-container').innerHTML = '';
+            document.getElementById('submit-area').innerHTML = '';
+            document.getElementById('results-container').innerHTML = '';
+            // Hide any existing reset button
+            const resetButton = document.getElementById('reset-quiz');
+            if (resetButton) {
+                resetButton.style.display = 'none';
+            }
+        });
+
     </script>
-  </body>
+</body>
 </html>
