@@ -86,12 +86,49 @@
         scrollbar-color: #888 #ffffff;
         }
 
+        @media (max-width: 768px) {
+            #sidebar {
+                width: 0;
+                overflow: hidden;
+                transition: width 0.3s ease;
+            }
+        }
+
+        .toggle-btn {
+            display: none;  /* Hide toggle button on larger screens */
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 1001;  /* Make sure it's above other content */
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .toggle-btn {
+                display: block; /* Show button on smaller screens */
+            }
+        }
+
+        #content {
+            transition: margin-left 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            #content {
+                margin-left: 0; /* Adjust content when sidebar is hidden */
+            }
+        }
+
+
     </style>
 </head>
 <body>
     
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
+            <button class="toggle-btn">
+                <span class="fa fa-bars"></span> Menu
+            </button>            
             <h1><a href="../../../index.html" class="logo">Thinkwise.in</a></h1>
             <ul class="list-unstyled components mb-5">
                 <li class="active">
@@ -292,6 +329,16 @@
             if (resetButton) {
                 resetButton.style.display = 'none';
             }
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const sidebar = document.getElementById('sidebar');
+            const toggleBtn = document.querySelector('.toggle-btn');
+
+            toggleBtn.addEventListener('click', function() {
+                const sidebarWidth = sidebar.style.width;
+                sidebar.style.width = sidebarWidth === '250px' ? '0' : '250px';  // Toggle between 0 and 250px
+            });
         });
 
     </script>
