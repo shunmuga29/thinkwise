@@ -169,7 +169,84 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
+    <!-- JavaScript for Dynamic Content and Quiz -->
+    <script>
+        const terms = {
+            1: {
+                units: [
+                    { name: "Unit 1: Geography", question: "What is the capital of France?", options: ["Paris", "London", "Rome", "Berlin"], correct: "Paris" },
+                    { name: "Unit 2: Astronomy", question: "What is the largest planet in our solar system?", options: ["Mars", "Jupiter", "Earth", "Saturn"], correct: "Jupiter" }
+                ]
+            },
+            2: {
+                units: [
+                    { name: "Unit 1: Chemistry", question: "What is the chemical symbol for water?", options: ["H2O", "CO2", "NaCl", "O2"], correct: "H2O" },
+                    { name: "Unit 2: Physics", question: "What is the speed of light?", options: ["300,000 km/s", "150,000 km/s", "450,000 km/s", "600,000 km/s"], correct: "300,000 km/s" }
+                ]
+            },
+            3: {
+                units: [
+                    { name: "Unit 1: Literature", question: "Who wrote 'Hamlet'?", options: ["Shakespeare", "Dickens", "Austen", "Homer"], correct: "Shakespeare" },
+                    { name: "Unit 2: Geography", question: "What is the largest ocean on Earth?", options: ["Atlantic", "Indian", "Arctic", "Pacific"], correct: "Pacific" }
+                ]
+            }
+        };
 
+
+        function showTerm(termId) {
+            updateActiveClass(termId);
+            let content = `<h2>Select a Unit for Term ${termId}</h2><div class="button-group">`;
+            terms[termId].units.forEach((unit, index) => {
+                content += `<button onclick="showQuestions(${termId}, ${index})">${unit.name}</button>`;
+            });
+            content += `</div>`;
+            document.getElementById('termContent').innerHTML = content;
+        }
+
+        function showQuestions(termId, unitIndex) {
+            let unit = terms[termId].units[unitIndex];
+            let content = `<form id="quizForm${termId}Unit${unitIndex}"><div class="question"><p>${unit.question}</p>`;
+            unit.options.forEach(option => {
+                content += `<input type="radio" name="question1" value="${option}"> ${option}<br>`;
+            });
+            content += `</div><div class="form-buttons">`;
+            content += `<button type="button" onclick="submitQuiz(${termId}, ${unitIndex})">Submit</button>`;
+            content += `<button type="reset" onclick="resetQuiz(${termId}, ${unitIndex})">Reset</button>`;
+            if (unitIndex < terms[termId].units.length - 1) {
+                content += `<button type="button" onclick="showQuestions(${termId}, ${unitIndex + 1})">Next Unit</button>`;
+            }
+            content += `</div></form><div id="result${termId}Unit${unitIndex}"></div>`;
+            document.getElementById('termContent').innerHTML = content;
+        }
+
+        function submitQuiz(termId, unitIndex) {
+            var form = document.getElementById(`quizForm${termId}Unit${unitIndex}`);
+            var score = 0;
+            if (form['question1'].value === terms[termId].units[unitIndex].correct) score++;
+            document.getElementById(`result${termId}Unit${unitIndex}`).innerHTML = "Your score: " + score;
+            form.querySelectorAll('input').forEach(input => input.disabled = true);
+            form.querySelector('button[type="button"]').disabled = true;
+        }
+
+        function resetQuiz(termId, unitIndex) {
+            var form = document.getElementById(`quizForm${termId}Unit${unitIndex}`);
+            document.getElementById(`result${termId}Unit${unitIndex}`).innerHTML = "";
+            form.querySelectorAll('input').forEach(input => input.disabled = false);
+            form.querySelector('button[type="button"]').disabled = false;
+        }
+
+        function updateActiveClass(activeTermId) {
+            document.querySelectorAll('.navbar-nav a').forEach(a => {
+                a.classList.remove('active');
+                const termNumber = a.textContent.trim().charAt(a.textContent.trim().length - 1);
+                if (termNumber == activeTermId) {
+                    a.classList.add('active');
+                }
+            });
+        }
+
+        showTerm(1); // Default initialization
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
