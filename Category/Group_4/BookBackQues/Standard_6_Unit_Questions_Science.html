@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thinkwise.in - Test Series Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .hidden { display: none; }
+        .question {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333; /* Default text color for questions */
+        }
+        .section-title h4 {
+            color: #333; /* Resetting to a neutral color for titles */
+            font-weight: bold;
+        }
+        .question-title {
+            color: #2f2c2c; /* Specific color only for questions */
+            font-weight: bold;
+        }
+        .question-container {
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .question-header {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] + label {
+            color: #2f2c2c; /* Same as question-title for consistency */
+            font-weight: 500; /* Optional: Adjust the weight as needed */
+        }
+        .correct-feedback {
+            background-color: #cce5ff; /* light blue */
+            border: 1px solid #b8daff;
+            color: #004085;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+
+        .incorrect-feedback {
+            background-color: #f8d7da; /* light red */
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">Think<span class="text-secondary font-weight-normal">wise.in</span></h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">Think<span class="text-white font-weight-normal">Wise.in</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">HOME PAGE</a>
+                    <a href="index.html" class="nav-item nav-link">BACK TO UNIT SELECTION</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Navbar Start -->
+    <div class="container-fluid pt-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h4 class="m-0 text-uppercase">STANDARD 6 BOOK BACK SOCIAL SCIENCE</h4>
+                    </div>
+                    <div class="section-title" style="margin-top: 10px;">
+                        <h4 class="m-0 text-uppercase">TERM 1</h4>
+                    </div>
+
+                    <!-- MCQ Form Start -->
+                    <form id="mcqForm">
+                        <!-- Question 1 -->
+                        <div class="question-container">
+                            <div class="question-header question-title">1. What is the capital of France?</div>
+                        <div>
+                            <input type="radio" id="q1a1" name="q1" value="Paris">
+                            <label for="q1a1">Paris</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1a2" name="q1" value="London">
+                            <label for="q1a2">London</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1a3" name="q1" value="Berlin">
+                            <label for="q1a3">Berlin</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1a4" name="q1" value="Madrid">
+                            <label for="q1a4">Madrid</label>
+                        </div>
+
+                        <!-- Question 1 Feedback -->
+                        <div id="feedback1" class="hidden">
+                            <strong>Your Answer:</strong> <span id="userAnswer1"></span><br>
+                            <strong>Correct Answer:</strong> Paris<br>
+                            <strong>Explanation:</strong> Paris is the capital of France, known for its historical landmarks and cultural significance.
+                        </div>
+                        
+                        <div class="question question-title">2. Which element has the chemical symbol 'O'?</div>
+                        <div>
+                            <input type="radio" id="q2a1" name="q2" value="Oxygen">
+                            <label for="q2a1">Oxygen</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q2a2" name="q2" value="Gold">
+                            <label for="q2a2">Gold</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q2a3" name="q2" value="Silver">
+                            <label for="q2a3">Silver</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q2a4" name="q2" value="Iron">
+                            <label for="q2a4">Iron</label>
+                        </div>
+
+                        <!-- Question 2 Feedback -->
+                        <div id="feedback2" class="hidden">
+                            <strong>Your Answer:</strong> <span id="userAnswer2"></span><br>
+                            <strong>Correct Answer:</strong> Oxygen<br>
+                            <strong>Explanation:</strong> Oxygen is denoted by the symbol 'O' and is essential for respiration and combustion.
+                        </div>
+                        
+                        <div class="question question-title">3. What is the largest planet in our Solar System?</div>
+                        <div>
+                            <input type="radio" id="q3a1" name="q3" value="Mars">
+                            <label for="q3a1">Mars</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q3a2" name="q3" value="Earth">
+                            <label for="q3a2">Earth</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q3a3" name="q3" value="Jupiter">
+                            <label for="q3a3">Jupiter</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q3a4" name="q3" value="Saturn">
+                            <label for="q3a4">Saturn</label>
+                        </div>
+                        <!-- Question 3 Feedback -->
+                        <div id="feedback3" class="hidden">
+                            <strong>Your Answer:</strong> <span id="userAnswer3"></span><br>
+                            <strong>Correct Answer:</strong> Jupiter<br>
+                            <strong>Explanation:</strong> Jupiter is the largest planet in our Solar System, known for its massive size and giant red spot.
+                        </div>
+                        
+                        <!-- Buttons -->
+                        <div class="mt-3">
+                            <button type="button" class="btn btn-primary" onclick="submitAnswers()">Submit</button>
+                            <button type="reset" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+                            <a href="next_unit.html" class="btn btn-success">Next Unit</a>
+                        </div>
+                    </form>
+                    <!-- MCQ Form End -->
+
+                    <!-- Results Display Start -->
+                    <div id="results" class="hidden mt-3">
+                        <h4>Your Score: <span id="score"></span></h4>
+                        <!-- Feedback for each question can be added here -->
+                    </div>
+                    <!-- Results Display End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+       
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">Thinkwise.in</a>. All Rights has been Reserved. 
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        function submitAnswers() {
+            var score = 0;
+            var totalQuestions = 3;
+            var correctAnswers = ["Paris", "Oxygen", "Jupiter"];
+            var explanations = [
+                "Paris is the capital of France, known for its historical landmarks and cultural significance.",
+                "Oxygen is denoted by the symbol 'O' and is essential for respiration and combustion.",
+                "Jupiter is the largest planet in our Solar System, known for its massive size and giant red spot."
+            ];
+
+            for (var i = 1; i <= totalQuestions; i++) {
+                var selectedAnswer = document.querySelector('input[name="q' + i + '"]:checked');
+                var feedback = document.getElementById(`feedback${i}`);
+
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === correctAnswers[i-1]) {
+                        feedback.className = "correct-feedback";
+                        score++;
+                    } else {
+                        feedback.className = "incorrect-feedback";
+                    }
+                    feedback.innerHTML = `<strong>Your Answer:</strong> ${selectedAnswer.value}<br>` +
+                                        `<strong>Correct Answer:</strong> ${correctAnswers[i-1]}<br>` +
+                                        `<strong>Explanation:</strong> ${explanations[i-1]}`;
+                } else {
+                    feedback.className = "incorrect-feedback";
+                    feedback.innerHTML = `<strong>Your Answer:</strong> No answer given<br>` +
+                                        `<strong>Correct Answer:</strong> ${correctAnswers[i-1]}<br>` +
+                                        `<strong>Explanation:</strong> ${explanations[i-1]}`;
+                }
+
+                feedback.classList.remove("hidden");
+            }
+
+            document.getElementById("score").textContent = `${score} / ${totalQuestions}`;
+            document.getElementById("results").classList.remove("hidden");
+        }
+
+
+        function resetForm() {
+            // Hide the results section and clear the score
+            document.getElementById("results").classList.add("hidden");
+            document.getElementById("score").textContent = "";
+
+            // Loop through each feedback section and hide them, clear texts
+            var totalQuestions = 3;
+            for (var i = 1; i <= totalQuestions; i++) {
+                var feedback = document.getElementById(`feedback${i}`);
+                
+                // Clear texts and hide feedback
+                feedback.innerHTML = "";
+                feedback.classList.add("hidden");
+                feedback.classList.remove("correct-feedback", "incorrect-feedback"); // Remove color styling
+            }
+
+            // Optionally, clear all checked radio buttons
+            var allRadios = document.querySelectorAll('#mcqForm input[type="radio"]');
+            allRadios.forEach(function(radio) {
+                radio.checked = false;
+            });
+        }
+
+
+    </script>
+</body>
+
+</html>
