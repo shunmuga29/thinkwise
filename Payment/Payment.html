@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Thinkwise.in - Test Series Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <style>
+        /* Apply color to form labels */
+        label {
+            color: #343a40; /* Adjust to match "Pay through the following QR Code" heading */
+            font-weight: bold; /* Optional: matches the bold style */
+        }
+        
+        /* Make asterisks red */
+        label .asterisk {
+        color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid d-none d-lg-block">
+        <div class="row align-items-center bg-dark px-lg-5">
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-n2">
+                        <li class="nav-item border-right border-secondary">
+                            <a class="nav-link text-body small" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body small" href="#">Login</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3 text-right d-none d-md-block">
+                <nav class="navbar navbar-expand-sm bg-dark p-0">
+                    <ul class="navbar-nav ml-auto mr-n2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-twitter"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-facebook-f"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-linkedin-in"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-instagram"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-google-plus-g"></small></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body" href="#"><small class="fab fa-youtube"></small></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row align-items-center bg-white py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="index.html" class="navbar-brand p-0 d-none d-lg-block">
+                    <h1 class="m-0 display-4 text-uppercase text-primary">Think<span class="text-secondary font-weight-normal">wise.in</span></h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-4 text-uppercase text-primary">Think<span class="text-white font-weight-normal">Wise.in</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="buy.html" class="nav-item nav-link">Buy Notes</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+   
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid pt-4 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title">
+                                <h4 class="m-0 text-uppercase font-weight-bold">Payment</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <div class="bg-white border border-top-0 p-1">
+                                    <div class="mb-2" style="display: flex; align-items: center; justify-content: space-between;">
+                                        <p style="color: black; padding-left: 30px; margin-bottom: 0;"><b>Pay through the following QR Code</b></p>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <!-- Add QR code image here -->
+                                        <div class="form-group text-center">
+                                            <img src="Qr.png" alt="QR Code" style="max-width: 200px; width: 50%;" />
+                                        </div>
+                                        <form action="submitForm.php" method="POST">
+                                            <div class="form-group">
+                                                <label>Name <span class="asterisk">*</span></label>
+                                                <input type="text" class="form-control" name="name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Email <span class="asterisk">*</span></label>
+                                                <input type="email" class="form-control" name="email" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Mobile Number <span class="asterisk">*</span></label>
+                                                <input type="text" class="form-control" name="mobile" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Transaction ID of Payment <span class="asterisk">*</span></label>
+                                                <input type="text" class="form-control" name="transaction_id" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Enrolling for Program <span class="asterisk">*</span></label>
+                                                <input type="text" class="form-control" name="program" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Address <span class="asterisk">*</span></label>
+                                                <textarea class="form-control" name="address" required></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Comment (if any)</label>
+                                                <textarea class="form-control" name="comment"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark pt-5 px-sm-3 px-md-5 mt-5">
+    </div>
+    <div class="container-fluid py-4 px-sm-3 px-md-5" style="background: #111111;">
+        <p class="m-0 text-center">&copy; <a href="#">Thinkwise.in</a>. All Rights has been Reserved. 		
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
